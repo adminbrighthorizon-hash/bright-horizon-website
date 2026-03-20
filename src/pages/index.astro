@@ -1,11 +1,49 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout>
+
+<section class="text-center py-20">
+  <h1 class="text-6xl font-bold mb-6 text-gray-900">
+    Build Your Digital Presence
+  </h1>
+
+  <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">
+    Bright Horizon is a full-service digital development studio specializing in modern websites, powerful business systems, and scalable cloud infrastructure for ambitious companies.
+  </p>
+
+  <a
+    href="/contact"
+    class="inline-block mt-10 bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 font-semibold transition-colors"
+  >
+    Start Your Project
+  </a>
+</section>
+
+<section class="py-16 border-t border-gray-200">
+  <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Why Choose Bright Horizon?</h2>
+  
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+      <h3 class="text-xl font-semibold mb-3 text-gray-900">Expert Team</h3>
+      <p class="text-gray-600 leading-relaxed">
+        Experienced developers and designers with proven expertise in modern technologies and best practices.
+      </p>
+    </div>
+    <div class="p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+      <h3 class="text-xl font-semibold mb-3 text-gray-900">Scalable Solutions</h3>
+      <p class="text-gray-600 leading-relaxed">
+        Built for growth. Our solutions scale with your business needs, from startups to enterprise applications.
+      </p>
+    </div>
+    <div class="p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
+      <h3 class="text-xl font-semibold mb-3 text-gray-900">24/7 Support</h3>
+      <p class="text-gray-600 leading-relaxed">
+        Dedicated support and maintenance ensures your digital presence runs smoothly around the clock.
+      </p>
+    </div>
+  </div>
+</section>
+
+</MainLayout>
