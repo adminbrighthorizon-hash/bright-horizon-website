@@ -8,16 +8,27 @@ import OpportunityCard from "../components/OpportunityCard.astro";
   title="Bright Horizon | Where Technology Meets Opportunity"
   description="Technology. Security. African Opportunity. IT consulting, information security, and opportunity facilitation across Africa."
 >
-<section class="soft-gradient hero-overlay relative overflow-hidden border-b border-[#1F7A63]/10">
+<section
+  class="cinematic-bg hero-overlay relative overflow-hidden border-b border-[#B38A4A]/20"
+  style="--hero-image: url('https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=2000&q=80');"
+>
+  <span class="floating-orb left-[8%] top-20 h-16 w-16 bg-[#B38A4A]/35"></span>
+  <span class="floating-orb right-[10%] top-36 h-24 w-24 bg-[#FBF8F2]/25" style="animation-delay: 1.5s;"></span>
+  <span class="floating-orb bottom-12 left-[45%] h-12 w-12 bg-[#164C43]/35" style="animation-delay: 2.2s;"></span>
   <div class="mx-auto max-w-6xl px-6 py-24 md:py-28">
-    <div class="max-w-3xl">
-      <p class="animate-fade-up text-sm font-semibold uppercase tracking-[0.16em] text-[#145A46]">Bright Horizon - Africa</p>
-      <h1 class="animate-fade-up animate-delay-1 mt-4 text-4xl font-bold leading-tight text-[#145A46] md:text-6xl">
+    <div class="glass-surface max-w-3xl rounded-3xl p-8 shadow-2xl shadow-[#103B34]/30 md:p-10">
+      <p class="animate-fade-up text-sm font-semibold uppercase tracking-[0.16em] text-[#164C43]">Bright Horizon - Africa</p>
+      <h1 class="animate-fade-up animate-delay-1 mt-4 text-4xl font-bold leading-tight text-[#103B34] md:text-6xl">
         Technology. Security. African Opportunity.
       </h1>
       <p class="animate-fade-up animate-delay-2 mt-6 text-lg text-[#1A1A1A]/85 md:text-xl">
         IT consulting, information security, and high-value opportunity facilitation across Africa's fastest-growing markets.
       </p>
+      <div class="animate-fade-up animate-delay-2 mt-5 flex flex-wrap gap-2">
+        <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Johannesburg</span>
+        <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Kinshasa</span>
+        <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Cape Town</span>
+      </div>
       <div class="animate-fade-up animate-delay-3 mt-10 flex flex-wrap gap-4">
         <a
           href="https://portal.brighthorizon.co.za"
@@ -66,15 +77,15 @@ import OpportunityCard from "../components/OpportunityCard.astro";
 </section>
 
 <section class="mx-auto max-w-6xl px-6 py-16">
-  <h2 class="animate-fade-up text-3xl font-semibold text-[#145A46] md:text-4xl">Sectors We Operate In</h2>
+  <h2 class="animate-fade-up text-3xl font-semibold text-[#103B34] md:text-4xl">Sectors We Operate In</h2>
   <p class="animate-fade-up animate-delay-1 mt-3 max-w-3xl text-[#1A1A1A]/80">
-    Agriculture, mining, infrastructure, property, import/export, tourism, and cybersecurity opportunities.
+    Agriculture, mining, infrastructure, property, import/export, tourism, and cybersecurity opportunities across Johannesburg, Kinshasa, Cape Town, and strategic regional hubs.
   </p>
   <div class="mt-10 grid gap-6 md:grid-cols-2">
     <OpportunityCard
       title="Kinshasa, DRC - Digital Infrastructure Rollout"
-      description="Active digital rollout programs, infrastructure modernization, and market-entry execution support."
-      image="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?auto=format&fit=crop&w=1400&q=75"
+      description="Fiber, connectivity, and smart-infrastructure programs supporting public and enterprise digital modernization."
+      image="https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=1400&q=80"
     />
     <OpportunityCard
       title="Lualaba, DRC - Cobalt & Copper Supply Chain"
@@ -83,8 +94,8 @@ import OpportunityCard from "../components/OpportunityCard.astro";
     />
     <OpportunityCard
       title="Katanga, DRC - Agriculture & Processing"
-      description="Agriculture and agri-processing opportunities covering production, processing, and cross-border supply chain."
-      image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=75"
+      description="Commercial agriculture and processing opportunities spanning mechanized farming, storage, and export-ready value chains."
+      image="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1400&q=80"
     />
     <OpportunityCard
       title="Cape Town, South Africa - Property & Tourism"
@@ -92,13 +103,18 @@ import OpportunityCard from "../components/OpportunityCard.astro";
       image="https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?auto=format&fit=crop&w=1400&q=75"
     />
   </div>
+  <div class="mt-8 flex flex-wrap gap-2">
+    <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Johannesburg - Finance & Enterprise Technology</span>
+    <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Kinshasa - Infrastructure & Digital Expansion</span>
+    <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Cape Town - Property & Tourism Growth</span>
+  </div>
 </section>
 
 <section class="mx-auto max-w-6xl px-6 pb-20">
   <div class="section-shell animate-fade-up p-10 text-center">
-    <h2 class="text-3xl font-semibold text-[#145A46]">Ready to Grow with Us?</h2>
+    <h2 class="text-3xl font-semibold text-[#103B34]">Ready to Grow with Us?</h2>
     <p class="mx-auto mt-3 max-w-2xl text-sm text-[#1A1A1A]/80">
-      Whether you need IT support, a security audit, or access to African opportunities - we are here.
+      From cybersecurity and digital transformation to curated African opportunities, we help you move with confidence and speed.
     </p>
     <a
       href="https://portal.brighthorizon.co.za/contactus"

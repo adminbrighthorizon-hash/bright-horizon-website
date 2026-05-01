@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --bh-primary: #1f7a63;
-  --bh-dark: #145a46;
-  --bh-accent: #2e9c7e;
-  --bh-beige: #f5f1e8;
-  --bh-light-beige: #faf7f2;
+  --bh-primary: #164c43;
+  --bh-dark: #103b34;
+  --bh-accent: #b38a4a;
+  --bh-beige: #f2eee5;
+  --bh-light-beige: #fbf8f2;
   --bh-white: #ffffff;
   --bh-text: #1a1a1a;
 }
@@ -79,8 +79,54 @@ textarea:focus {
 }
 
 .hero-overlay {
-  background: radial-gradient(circle at top right, rgba(46, 156, 126, 0.25), transparent 46%),
-    radial-gradient(circle at bottom left, rgba(20, 90, 70, 0.22), transparent 52%);
+  background: radial-gradient(circle at top right, rgba(179, 138, 74, 0.25), transparent 46%),
+    radial-gradient(circle at bottom left, rgba(22, 76, 67, 0.24), transparent 52%);
+}
+
+.cinematic-bg {
+  position: relative;
+  isolation: isolate;
+}
+
+.cinematic-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(16, 59, 52, 0.6), rgba(16, 59, 52, 0.6)), var(--hero-image);
+  background-position: center;
+  background-size: cover;
+  animation: heroZoom 28s ease-in-out infinite alternate;
+  z-index: -2;
+}
+
+.cinematic-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(179, 138, 74, 0.22), transparent 36%),
+    radial-gradient(circle at 85% 80%, rgba(251, 248, 242, 0.15), transparent 34%);
+  animation: glowDrift 12s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+.floating-orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(2px);
+  animation: floatOrb 9s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.glass-surface {
+  background: rgba(251, 248, 242, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(179, 138, 74, 0.25);
+}
+
+.accent-chip {
+  border: 1px solid rgba(179, 138, 74, 0.35);
+  background: rgba(179, 138, 74, 0.09);
+  color: #6f5126;
 }
 
 .animate-fade-up {
@@ -108,6 +154,7 @@ textarea:focus {
 .btn-primary {
   background: var(--bh-primary);
   color: var(--bh-white);
+  border: 1px solid rgba(179, 138, 74, 0.25);
 }
 
 .btn-primary:hover {
@@ -115,13 +162,13 @@ textarea:focus {
 }
 
 .btn-secondary {
-  border: 1px solid rgba(31, 122, 99, 0.25);
-  color: var(--bh-dark);
-  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(179, 138, 74, 0.35);
+  color: #f8f5ee;
+  background: rgba(179, 138, 74, 0.2);
 }
 
 .btn-secondary:hover {
-  background: rgba(31, 122, 99, 0.08);
+  background: rgba(179, 138, 74, 0.32);
 }
 
 @keyframes gradientShift {
@@ -140,5 +187,33 @@ textarea:focus {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes heroZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes glowDrift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
+@keyframes floatOrb {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
   }
 }
