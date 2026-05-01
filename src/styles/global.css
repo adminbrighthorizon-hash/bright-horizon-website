@@ -202,8 +202,8 @@ textarea:focus {
 }
 
 .logo-badge--footer {
-  height: 3.55rem;
-  width: 3.55rem;
+  height: 3.15rem;
+  width: 3.15rem;
   border-radius: 0.9rem;
   border: 1px solid rgba(199, 156, 73, 0.48);
   box-shadow: 0 12px 22px -16px rgba(7, 29, 25, 0.82), inset 0 1px 0 rgba(255, 255, 255, 0.74);
@@ -243,7 +243,7 @@ textarea:focus {
 }
 
 .brand-lockup--footer .brand-wordmark {
-  font-size: 1.5rem;
+  font-size: 1.28rem;
   background: linear-gradient(120deg, #fff8e7 0%, #f9da96 45%, #e7b85f 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -252,9 +252,9 @@ textarea:focus {
 }
 
 .brand-tagline--footer {
-  font-size: 0.68rem;
+  font-size: 0.6rem;
   color: #ffe9bc;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-shadow: 0 2px 8px rgba(5, 25, 22, 0.35);
 }
 
@@ -350,6 +350,34 @@ a:hover .brand-wordmark::after {
 
 .btn-secondary:hover {
   background: linear-gradient(135deg, #d2b67c 0%, #c59f5c 52%, #b88e42 120%);
+  transform: translateY(-2px) scale(1.01);
+}
+
+.hero-cta-primary {
+  background: linear-gradient(135deg, #0f4b40 0%, #0d352e 58%, #0a2924 120%);
+  color: #fff4de;
+  border: 1px solid rgba(225, 193, 120, 0.45);
+  box-shadow: 0 20px 38px -20px rgba(5, 24, 21, 0.9), inset 0 1px 0 rgba(255, 244, 214, 0.22);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.hero-cta-primary:hover {
+  background: linear-gradient(135deg, #115446 0%, #0f3c33 58%, #0b2f28 120%);
+  box-shadow: 0 24px 44px -18px rgba(5, 24, 21, 0.92), inset 0 1px 0 rgba(255, 244, 214, 0.3);
+  transform: translateY(-2px) scale(1.01);
+}
+
+.hero-cta-secondary {
+  background: linear-gradient(135deg, #e8cf9b 0%, #dab978 56%, #c99a47 120%);
+  color: #0f3d35;
+  border: 1px solid rgba(171, 127, 50, 0.62);
+  box-shadow: 0 18px 34px -20px rgba(10, 35, 31, 0.72), inset 0 1px 0 rgba(255, 247, 226, 0.52);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.hero-cta-secondary:hover {
+  background: linear-gradient(135deg, #dec189 0%, #cfac67 56%, #bf9140 120%);
+  box-shadow: 0 22px 40px -18px rgba(10, 35, 31, 0.76), inset 0 1px 0 rgba(255, 247, 226, 0.42);
   transform: translateY(-2px) scale(1.01);
 }
 
