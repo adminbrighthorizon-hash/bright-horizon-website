@@ -11,7 +11,7 @@ const isGitHubPagesDeploy = deployTarget === 'github-pages' && !!repoOwner && !!
 export default defineConfig({
   integrations: [],
   site: isGitHubPagesDeploy ? `https://${repoOwner}.github.io` : undefined,
-  base: isGitHubPagesDeploy ? `/${repoName}` : '/',
+  base: isGitHubPagesDeploy ? `/${repoName}/` : '/',
   vite: {
     plugins: [tailwindcss()]
   }
