@@ -4,6 +4,16 @@ import ServiceCard from "../components/ServiceCard.astro";
 import OpportunityCard from "../components/OpportunityCard.astro";
 
 const baseUrl = import.meta.env.BASE_URL;
+const heroSlideFiles = [
+  "photo-1504384308090-c894fdcc538d.avif",
+  "photo-1561883088-039e53143d73.avif",
+  "photo-1601926495045-d066ccae8085.avif",
+  "premium_photo-1733306493254-52b143296396.avif",
+  "premium_photo-1770404438404-4b3d10563f13.avif",
+  "premium_photo-1770631480572-034749b312f0.avif"
+];
+const heroSlides = heroSlideFiles.map((file) => `${baseUrl}hero-slides/${file}`);
+const heroSlideDurationSec = heroSlides.length * 7;
 ---
 
 <MainLayout
@@ -13,10 +23,15 @@ const baseUrl = import.meta.env.BASE_URL;
 <section
   class="cinematic-bg hero-overlay hero-interactive relative overflow-hidden border-b border-[#B38A4A]/20"
 >
-  <div class="hero-slideshow" aria-hidden="true">
-    <span class="hero-slide hero-slide-1"></span>
-    <span class="hero-slide hero-slide-2"></span>
-    <span class="hero-slide hero-slide-3"></span>
+  <div class="hero-slideshow" style={`--hero-cycle: ${heroSlideDurationSec}s;`} aria-hidden="true">
+    {
+      heroSlides.map((slide, index) => (
+        <span
+          class="hero-slide"
+          style={`--hero-image: url('${slide}'); --hero-delay: -${index * 7}s;`}
+        ></span>
+      ))
+    }
   </div>
   <span class="floating-orb left-[8%] top-20 h-16 w-16 bg-[#B38A4A]/35"></span>
   <span class="floating-orb right-[10%] top-36 h-24 w-24 bg-[#FBF8F2]/25" style="animation-delay: 1.5s;"></span>

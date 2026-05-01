@@ -1,5 +1,5 @@
 ---
-import horizonLogo from "../assets/horizon-mark.svg";
+import horizonLogo from "../assets/horizon1.png";
 
 const baseUrl = import.meta.env.BASE_URL;
 ---
@@ -7,7 +7,9 @@ const baseUrl = import.meta.env.BASE_URL;
 <nav class="sticky top-0 z-50 border-b border-[#1F7A63]/10 bg-[#FAF7F2]/95 shadow-sm backdrop-blur-md">
   <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
     <a href={baseUrl} class="flex items-center gap-3 text-2xl font-bold tracking-tight transition-colors">
-      <img src={horizonLogo.src} alt="Bright Horizon logo" class="logo-badge logo-badge--header" loading="eager" decoding="async" />
+      <span class="logo-badge logo-badge--header">
+        <img src={horizonLogo.src} alt="Bright Horizon logo" class="h-11 w-11 object-contain" loading="eager" decoding="async" />
+      </span>
       <span class="brand-lockup">
         <span class="brand-wordmark">Bright Horizon</span>
         <span class="brand-tagline">Technology. Security. Opportunity.</span>
@@ -15,17 +17,17 @@ const baseUrl = import.meta.env.BASE_URL;
     </a>
 
     <div class="hidden items-center gap-7 text-sm font-semibold md:flex">
-      <a href={baseUrl} class="text-[#1A1A1A] transition-colors hover:text-[#1F7A63]">Home</a>
-      <a href={`${baseUrl}services`} class="text-[#1A1A1A] transition-colors hover:text-[#1F7A63]">Services</a>
+      <a href={baseUrl} class="nav-pill">Home</a>
+      <a href={`${baseUrl}services`} class="nav-pill">Services</a>
       <a
         href="https://portal.brighthorizon.co.za/solutions"
         target="_blank"
         rel="noreferrer"
-        class="text-[#1A1A1A] transition-colors hover:text-[#1F7A63]"
+        class="nav-pill"
       >
         Solutions
       </a>
-      <a href={`${baseUrl}about`} class="text-[#1A1A1A] transition-colors hover:text-[#1F7A63]">About Us</a>
+      <a href={`${baseUrl}about`} class="nav-pill">About Us</a>
       <a
         href={`${baseUrl}contact`}
         class="btn-primary btn-shine rounded-full px-5 py-2 text-white shadow-md shadow-[#145A46]/30"
@@ -39,11 +41,11 @@ const baseUrl = import.meta.env.BASE_URL;
         Menu
       </summary>
       <div class="absolute right-6 mt-2 flex w-52 flex-col rounded-xl border border-[#1F7A63]/10 bg-[#FAF7F2] p-3 shadow-lg">
-        <a href={baseUrl} class="rounded-lg px-3 py-2 text-sm font-semibold text-[#1A1A1A] hover:bg-[#1F7A63]/10">Home</a>
-        <a href={`${baseUrl}services`} class="rounded-lg px-3 py-2 text-sm font-semibold text-[#1A1A1A] hover:bg-[#1F7A63]/10">Services</a>
-        <a href="https://portal.brighthorizon.co.za/solutions" target="_blank" rel="noreferrer" class="rounded-lg px-3 py-2 text-sm font-semibold text-[#1A1A1A] hover:bg-[#1F7A63]/10">Solutions</a>
-        <a href={`${baseUrl}about`} class="rounded-lg px-3 py-2 text-sm font-semibold text-[#1A1A1A] hover:bg-[#1F7A63]/10">About Us</a>
-        <a href={`${baseUrl}contact`} class="rounded-lg px-3 py-2 text-sm font-semibold text-[#1A1A1A] hover:bg-[#1F7A63]/10">Contact</a>
+        <a href={baseUrl} class="nav-pill nav-pill--mobile">Home</a>
+        <a href={`${baseUrl}services`} class="nav-pill nav-pill--mobile">Services</a>
+        <a href="https://portal.brighthorizon.co.za/solutions" target="_blank" rel="noreferrer" class="nav-pill nav-pill--mobile">Solutions</a>
+        <a href={`${baseUrl}about`} class="nav-pill nav-pill--mobile">About Us</a>
+        <a href={`${baseUrl}contact`} class="nav-pill nav-pill--mobile">Contact</a>
       </div>
     </details>
   </div>
