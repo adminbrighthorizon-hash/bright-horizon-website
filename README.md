@@ -1,48 +1,104 @@
-# Astro Starter Kit: Basics
+# Bright Horizon Website
 
-```sh
-npm create astro@latest -- --template basics
+Marketing website for Bright Horizon, built with Astro and Tailwind CSS.
+
+## Stack
+
+- Astro 6
+- Tailwind CSS 4
+- Node.js 22+
+
+## Local Development
+
+1. Install dependencies:
+
+```bash
+npm install
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+2. Start development server:
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+```bash
+npm run dev
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+3. Open:
 
-## 🧞 Commands
+http://localhost:4321
 
-All commands are run from the root of the project, from a terminal:
+## Build and Preview
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Build production assets:
 
-## 👀 Want to learn more?
+```bash
+npm run build
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# bright-horizon-website
-# bright-horizon-website
+Preview production build locally:
+
+```bash
+npm run preview
+```
+
+## Deployment Flow
+
+This repository uses branch-based deployment:
+
+1. Push to dev branch:
+- Deploys to GitHub Pages via GitHub Actions
+
+2. Merge to main branch:
+- Deploys to Cloudflare Pages via GitHub Actions
+
+Workflow files:
+
+- .github/workflows/deploy-dev-github-pages.yml
+- .github/workflows/deploy-main-cloudflare.yml
+
+## Domains
+
+Primary production domain:
+
+- https://www.brighthorizon.co.za
+
+Temporary/default Cloudflare domains may exist for preview/fallback:
+
+- bright-horizon-website.brighthorizonza.workers.dev
+- *-bright-horizon-website.brighthorizonza.workers.dev
+
+## SSL and Canonical Host
+
+This project includes Cloudflare-compatible edge files in public:
+
+- public/_redirects
+- public/_headers
+
+These enforce:
+
+- HTTP to HTTPS redirects
+- Apex to www redirect
+- Security headers including HSTS
+
+Cloudflare dashboard settings should also be enabled:
+
+1. SSL/TLS mode: Full (strict)
+2. Always Use HTTPS: On
+3. Redirect rule from brighthorizon.co.za to www.brighthorizon.co.za
+
+## Required GitHub Secrets (Cloudflare Deploy)
+
+Set these in GitHub repository secrets:
+
+- CLOUDFLARE_API_TOKEN
+- CLOUDFLARE_ACCOUNT_ID
+- CLOUDFLARE_PAGES_PROJECT
+
+## Project Structure
+
+Key directories:
+
+- src/pages: route pages
+- src/components: reusable UI components
+- src/layouts: layout wrappers
+- src/styles: global styles
+- public: static assets and edge config files
