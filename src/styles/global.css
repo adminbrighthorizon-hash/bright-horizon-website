@@ -152,23 +152,50 @@ textarea:focus {
 }
 
 .btn-primary {
-  background: var(--bh-primary);
+  background: linear-gradient(135deg, var(--bh-primary), #1f6457);
   color: var(--bh-white);
   border: 1px solid rgba(179, 138, 74, 0.25);
+  box-shadow: 0 14px 30px -16px rgba(16, 59, 52, 0.9);
+  transform: translateY(0);
 }
 
 .btn-primary:hover {
-  background: var(--bh-dark);
+  background: linear-gradient(135deg, var(--bh-dark), #164c43);
+  box-shadow: 0 16px 34px -14px rgba(16, 59, 52, 0.85);
+  transform: translateY(-1px);
 }
 
 .btn-secondary {
   border: 1px solid rgba(179, 138, 74, 0.35);
   color: #f8f5ee;
   background: rgba(179, 138, 74, 0.2);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
 .btn-secondary:hover {
   background: rgba(179, 138, 74, 0.32);
+  transform: translateY(-1px);
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -130%;
+  height: 100%;
+  width: 45%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.38), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.55s ease;
+}
+
+.btn-shine:hover::after {
+  left: 140%;
 }
 
 @keyframes gradientShift {
