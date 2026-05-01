@@ -1,6 +1,7 @@
 {
 	"compatibility_date": "2026-05-01",
 	"name": "bright-horizon-website",
+	"workers_dev": true,
 	"main": "worker.js",
 	"assets": {
 		"directory": "./dist",
