@@ -11,7 +11,7 @@
 	},
 	"routes": [
 		{
-			"pattern": "www.brighthorizon.co.za/*",
+			"pattern": "www.brighthorizon.co.za",
 			"custom_domain": true
 		}
 	]
