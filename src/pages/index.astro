@@ -12,8 +12,12 @@ const baseUrl = import.meta.env.BASE_URL;
 >
 <section
   class="cinematic-bg hero-overlay hero-interactive relative overflow-hidden border-b border-[#B38A4A]/20"
-  style="--hero-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2000&q=80');"
 >
+  <div class="hero-slideshow" aria-hidden="true">
+    <span class="hero-slide hero-slide-1"></span>
+    <span class="hero-slide hero-slide-2"></span>
+    <span class="hero-slide hero-slide-3"></span>
+  </div>
   <span class="floating-orb left-[8%] top-20 h-16 w-16 bg-[#B38A4A]/35"></span>
   <span class="floating-orb right-[10%] top-36 h-24 w-24 bg-[#FBF8F2]/25" style="animation-delay: 1.5s;"></span>
   <span class="floating-orb bottom-12 left-[45%] h-12 w-12 bg-[#164C43]/35" style="animation-delay: 2.2s;"></span>

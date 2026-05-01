@@ -7,10 +7,12 @@ const baseUrl = import.meta.env.BASE_URL;
 <nav class="sticky top-0 z-50 border-b border-[#1F7A63]/10 bg-[#FAF7F2]/95 shadow-sm backdrop-blur-md">
   <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
     <a href={baseUrl} class="flex items-center gap-3 text-2xl font-bold tracking-tight transition-colors">
-      <img src={horizonLogo.src} alt="Bright Horizon logo" class="h-10 w-10 rounded-md object-contain" loading="eager" decoding="async" />
-      <span class="brand-wordmark">
-        <span class="brand-wordmark__lead">Bright</span>
-        <span class="brand-wordmark__tail">Horizon</span>
+      <span class="logo-badge">
+        <img src={horizonLogo.src} alt="Bright Horizon logo" class="h-10 w-10 object-contain" loading="eager" decoding="async" />
+      </span>
+      <span class="brand-lockup">
+        <span class="brand-wordmark">Bright Horizon</span>
+        <span class="brand-tagline">Technology. Security. Opportunity.</span>
       </span>
     </a>
 
