@@ -14,15 +14,27 @@ import MainLayout from "../layouts/MainLayout.astro";
     <div class="space-y-8">
       <div>
         <h3 class="font-semibold text-lg text-gray-900 mb-2">Email</h3>
-        <a href="mailto:admin@brighthorizon.co.za" class="text-blue-600 hover:text-blue-700 font-medium">
-          admin@brighthorizon.co.za
+        <a href="mailto:info@brighthorizon.co.za" class="text-blue-600 hover:text-blue-700 font-medium">
+          info@brighthorizon.co.za
         </a>
       </div>
       
       <div>
         <h3 class="font-semibold text-lg text-gray-900 mb-2">Phone</h3>
-        <a href="tel:+15551234567" class="text-blue-600 hover:text-blue-700 font-medium">
-          (555) 123-4567
+        <a href="tel:+27793599604" class="text-blue-600 hover:text-blue-700 font-medium">
+          +27 79 359 9604
+        </a>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-lg text-gray-900 mb-2">WhatsApp</h3>
+        <a
+          href="https://wa.me/27793599604"
+          target="_blank"
+          rel="noreferrer"
+          class="inline-flex items-center rounded-lg bg-[#25D366] px-4 py-2 font-semibold text-white transition hover:bg-[#1FAE53]"
+        >
+          Chat on WhatsApp
         </a>
       </div>
       
@@ -40,7 +52,7 @@ import MainLayout from "../layouts/MainLayout.astro";
   </div>
   
   <div>
-    <form class="space-y-6 bg-gray-50 p-8 rounded-lg border border-gray-200">
+    <form class="space-y-6 bg-gray-50 p-8 rounded-lg border border-gray-200" action="mailto:info@brighthorizon.co.za" method="post" enctype="text/plain">
       <div>
         <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Full Name *</label>
         <input
@@ -88,7 +100,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         type="submit"
         class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-semibold transition-colors"
       >
-        Send Message
+        Send Message to info@brighthorizon.co.za
       </button>
       
       <p class="text-xs text-gray-600 text-center">
