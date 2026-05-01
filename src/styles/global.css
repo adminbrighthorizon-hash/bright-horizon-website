@@ -243,7 +243,7 @@ textarea:focus {
 }
 
 .brand-lockup--footer .brand-wordmark {
-  font-size: 1.28rem;
+  font-size: 1.18rem;
   background: linear-gradient(120deg, #fff8e7 0%, #f9da96 45%, #e7b85f 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -252,7 +252,7 @@ textarea:focus {
 }
 
 .brand-tagline--footer {
-  font-size: 0.6rem;
+  font-size: 0.62rem;
   color: #ffe9bc;
   letter-spacing: 0.16em;
   text-shadow: 0 2px 8px rgba(5, 25, 22, 0.35);

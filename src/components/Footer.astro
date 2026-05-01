@@ -5,8 +5,8 @@ const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <footer class="mt-16 border-t border-[#0F4A3D]/20 bg-[#145A46] text-white">
-  <div class="mx-auto max-w-6xl px-6 py-12 md:py-14">
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+  <div class="mx-auto max-w-6xl px-6 py-10 md:py-12">
+    <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
       <div>
         <div class="flex items-center gap-4">
           <img src={horizonLogo.src} alt="Bright Horizon logo" class="logo-badge logo-badge--footer" loading="lazy" decoding="async" />
@@ -15,32 +15,20 @@ const baseUrl = import.meta.env.BASE_URL;
             <p class="brand-tagline brand-tagline--footer">Technology. Security. Opportunity.</p>
           </div>
         </div>
-        <p class="mt-5 text-[#E8F2EF]">
-          Trusted consulting, secure digital delivery, and opportunity facilitation for organizations building with confidence across Africa.
-        </p>
       </div>
       <div>
-        <h4 class="mb-4 font-semibold">Services</h4>
+        <h4 class="mb-3 font-semibold">Quick Links</h4>
         <ul class="space-y-2 text-[#D7EAE5]">
           <li><a href={`${baseUrl}services`} class="transition-colors hover:text-white">IT & Cloud Solutions</a></li>
-          <li><a href={`${baseUrl}services`} class="transition-colors hover:text-white">IAM & Security</a></li>
-          <li><a href={`${baseUrl}services`} class="transition-colors hover:text-white">Automation & Reporting</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="mb-4 font-semibold">Company</h4>
-        <ul class="space-y-2 text-[#D7EAE5]">
           <li><a href={`${baseUrl}about`} class="transition-colors hover:text-white">About Us</a></li>
+          <li><a href={`${baseUrl}services`} class="transition-colors hover:text-white">IAM & Security</a></li>
           <li><a href="https://portal.brighthorizon.co.za/solutions" target="_blank" rel="noreferrer" class="transition-colors hover:text-white">Solutions Portal</a></li>
-          <li><a href={`${baseUrl}contact`} class="transition-colors hover:text-white">Work With Us</a></li>
+          <li><a href={`${baseUrl}contact`} class="transition-colors hover:text-white">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="mb-4 font-semibold">Regions</h4>
-        <p class="text-sm text-[#D7EAE5]">
-          South Africa and Democratic Republic of Congo, with international collaboration and delivery.
-        </p>
-        <div class="mt-4 space-y-2 text-sm">
+        <h4 class="mb-3 font-semibold">Contact</h4>
+        <div class="space-y-2 text-sm text-[#D7EAE5]">
           <p>
             <a href="mailto:info@brighthorizon.co.za" class="transition-colors hover:text-white">info@brighthorizon.co.za</a>
           </p>
@@ -49,9 +37,6 @@ const baseUrl = import.meta.env.BASE_URL;
           </p>
         </div>
       </div>
-    </div>
-    <div class="mt-8 border-t border-white/15 pt-6 text-center text-sm text-[#D7EAE5] md:text-left">
-      <p>Bright Horizon - Trusted technology, security, and opportunity delivery across Africa.</p>
     </div>
   </div>
 </footer>
