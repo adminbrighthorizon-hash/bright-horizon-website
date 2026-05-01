@@ -1,4 +1,0 @@
-# Force HTTPS and canonical host
-http://brighthorizon.co.za/* https://www.brighthorizon.co.za/:splat 301
-http://www.brighthorizon.co.za/* https://www.brighthorizon.co.za/:splat 301
-https://brighthorizon.co.za/* https://www.brighthorizon.co.za/:splat 301
