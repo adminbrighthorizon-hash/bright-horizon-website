@@ -1,6 +1,4 @@
 ---
-import horizonLogo from "../assets/horizon1.png";
-
 const baseUrl = import.meta.env.BASE_URL;
 ---
 
@@ -8,7 +6,39 @@ const baseUrl = import.meta.env.BASE_URL;
   <div class="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
     <a href={baseUrl} class="flex items-center gap-3 text-2xl font-bold tracking-tight transition-colors">
       <span class="logo-badge logo-badge--header">
-        <img src={horizonLogo.src} alt="Bright Horizon logo" class="h-11 w-11 object-contain" loading="eager" decoding="async" />
+        <!-- Bright Horizon horizon-sunrise logomark -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56" fill="none" class="h-11 w-11" aria-label="Bright Horizon logo">
+          <rect width="56" height="56" rx="12" fill="#0E3530"/>
+          <rect width="56" height="56" rx="12" fill="url(#bgGradN)" opacity="0.45"/>
+          <ellipse cx="28" cy="36" rx="20" ry="3.5" fill="#C79C49" opacity="0.18"/>
+          <path d="M 6 36 Q 28 34.2 50 36" stroke="#C79C49" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M 14 36 A 14 14 0 0 1 42 36" stroke="url(#arcGradN)" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <circle cx="28" cy="36" r="3.2" fill="url(#sunGradN)"/>
+          <circle cx="28" cy="36" r="1.4" fill="#FDEEA0" opacity="0.9"/>
+          <line x1="28" y1="10" x2="28" y2="16.5" stroke="#E8B455" stroke-width="1.8" stroke-linecap="round"/>
+          <line x1="16" y1="16" x2="20.2" y2="20.2" stroke="#E8B455" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="40" y1="16" x2="35.8" y2="20.2" stroke="#E8B455" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="8.5" y1="27.5" x2="13.5" y2="29.5" stroke="#E8B455" stroke-width="1.3" stroke-linecap="round" opacity="0.8"/>
+          <line x1="47.5" y1="27.5" x2="42.5" y2="29.5" stroke="#E8B455" stroke-width="1.3" stroke-linecap="round" opacity="0.8"/>
+          <line x1="9" y1="41" x2="47" y2="41" stroke="#1F7A63" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+          <line x1="13" y1="45.5" x2="43" y2="45.5" stroke="#1F7A63" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+          <line x1="18" y1="49.5" x2="38" y2="49.5" stroke="#1F7A63" stroke-width="1" stroke-linecap="round" opacity="0.18"/>
+          <defs>
+            <linearGradient id="bgGradN" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#25A078" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#091F1B" stop-opacity="0"/>
+            </linearGradient>
+            <linearGradient id="arcGradN" x1="14" y1="22" x2="42" y2="36" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#F0C94B"/>
+              <stop offset="100%" stop-color="#E8B455"/>
+            </linearGradient>
+            <radialGradient id="sunGradN" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#FDEEA0"/>
+              <stop offset="60%" stop-color="#F0C94B"/>
+              <stop offset="100%" stop-color="#C79C49"/>
+            </radialGradient>
+          </defs>
+        </svg>
       </span>
       <span class="brand-lockup">
         <span class="brand-wordmark">Bright Horizon</span>
@@ -46,6 +76,17 @@ const baseUrl = import.meta.env.BASE_URL;
         <a href="https://portal.brighthorizon.co.za/solutions" target="_blank" rel="noreferrer" class="nav-pill nav-pill--mobile">Solutions</a>
         <a href={`${baseUrl}about`} class="nav-pill nav-pill--mobile">About Us</a>
         <a href={`${baseUrl}contact`} class="nav-pill nav-pill--mobile">Contact</a>
+        <a
+          href="https://wa.me/27793599604"
+          target="_blank"
+          rel="noreferrer"
+          class="mt-2 flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-4 py-2.5 text-sm font-bold text-white shadow-md shadow-[#25D366]/30 transition hover:bg-[#1FAE53] active:scale-95"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Us
+        </a>
       </div>
     </details>
   </div>
