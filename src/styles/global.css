@@ -206,6 +206,16 @@ textarea:focus {
   flex-shrink: 0;
 }
 
+.logo-badge--header {
+  height: 4rem;
+  width: 4rem;
+}
+
+.logo-badge--footer {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
 .brand-lockup {
   display: flex;
   flex-direction: column;
@@ -233,6 +243,19 @@ textarea:focus {
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: rgba(17, 70, 61, 0.74);
+}
+
+.brand-lockup--footer {
+  gap: 0.28rem;
+}
+
+.brand-lockup--footer .brand-wordmark {
+  font-size: 1.5rem;
+}
+
+.brand-tagline--footer {
+  font-size: 0.68rem;
+  color: rgba(255, 248, 232, 0.84);
 }
 
 .brand-wordmark::after {
