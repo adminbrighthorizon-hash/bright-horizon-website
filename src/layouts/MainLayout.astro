@@ -12,6 +12,8 @@ const {
   title = "Bright Horizon | Technology Meets Opportunity",
   description = "Premium IT services, IAM, automation, cloud solutions, and business opportunity facilitation across Africa."
 } = Astro.props;
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <!DOCTYPE html>
@@ -21,8 +23,8 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#1F7A63" />
-    <link rel="icon" type="image/png" href="/horizon1.png" />
-    <link rel="apple-touch-icon" href="/horizon1.png" />
+    <link rel="icon" type="image/png" href={`${baseUrl}horizon1.png`} />
+    <link rel="apple-touch-icon" href={`${baseUrl}horizon1.png`} />
     <title>{title}</title>
   </head>
 

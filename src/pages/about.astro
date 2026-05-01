@@ -1,5 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <MainLayout
@@ -53,9 +55,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       Discuss your next technology or opportunity initiative with our team.
     </p>
     <a
-      href="https://erp.brighthorizon.co.za/contactus"
-      target="_blank"
-      rel="noreferrer"
+      href={`${baseUrl}contact`}
       class="btn-primary mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold"
     >
       Work With Us
