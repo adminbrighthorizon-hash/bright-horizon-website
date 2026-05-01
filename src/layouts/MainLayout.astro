@@ -2,6 +2,16 @@
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Bright Horizon | Technology Meets Opportunity",
+  description = "Premium IT services, IAM, automation, cloud solutions, and business opportunity facilitation across Africa."
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -9,15 +19,16 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Bright Horizon - Professional web development, business systems, and cloud infrastructure solutions." />
-    <title>Bright Horizon</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#1F7A63" />
+    <title>{title}</title>
   </head>
 
-  <body class="bg-white text-gray-900 antialiased">
+  <body class="antialiased">
 
     <Navbar />
 
-    <main class="max-w-6xl mx-auto px-6 py-16">
+    <main>
       <slot />
     </main>
 

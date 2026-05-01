@@ -1,49 +1,113 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+import OpportunityCard from "../components/OpportunityCard.astro";
 ---
 
-<MainLayout>
-
-<section class="text-center py-20">
-  <h1 class="text-6xl font-bold mb-6 text-gray-900">
-    Build Your Digital Presence
-  </h1>
-
-  <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-4 leading-relaxed">
-    Bright Horizon is a full-service digital development studio specializing in modern websites, powerful business systems, and scalable cloud infrastructure for ambitious companies.
-  </p>
-
-  <a
-    href="/contact"
-    class="inline-block mt-10 bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 font-semibold transition-colors"
-  >
-    Start Your Project
-  </a>
-</section>
-
-<section class="py-16 border-t border-gray-200">
-  <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Why Choose Bright Horizon?</h2>
-  
-  <div class="grid md:grid-cols-3 gap-8">
-    <div class="p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
-      <h3 class="text-xl font-semibold mb-3 text-gray-900">Expert Team</h3>
-      <p class="text-gray-600 leading-relaxed">
-        Experienced developers and designers with proven expertise in modern technologies and best practices.
+<MainLayout
+  title="Bright Horizon | Where Technology Meets Opportunity"
+  description="Technology. Security. African Opportunity. IT consulting, information security, and opportunity facilitation across Africa."
+>
+<section class="soft-gradient hero-overlay relative overflow-hidden border-b border-[#1F7A63]/10">
+  <div class="mx-auto max-w-6xl px-6 py-24 md:py-28">
+    <div class="max-w-3xl">
+      <p class="animate-fade-up text-sm font-semibold uppercase tracking-[0.16em] text-[#145A46]">Bright Horizon - Africa</p>
+      <h1 class="animate-fade-up animate-delay-1 mt-4 text-4xl font-bold leading-tight text-[#145A46] md:text-6xl">
+        Technology. Security. African Opportunity.
+      </h1>
+      <p class="animate-fade-up animate-delay-2 mt-6 text-lg text-[#1A1A1A]/85 md:text-xl">
+        IT consulting, information security, and high-value opportunity facilitation across Africa's fastest-growing markets.
       </p>
-    </div>
-    <div class="p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
-      <h3 class="text-xl font-semibold mb-3 text-gray-900">Scalable Solutions</h3>
-      <p class="text-gray-600 leading-relaxed">
-        Built for growth. Our solutions scale with your business needs, from startups to enterprise applications.
-      </p>
-    </div>
-    <div class="p-8 bg-gray-50 rounded-lg hover:shadow-lg transition-shadow">
-      <h3 class="text-xl font-semibold mb-3 text-gray-900">24/7 Support</h3>
-      <p class="text-gray-600 leading-relaxed">
-        Dedicated support and maintenance ensures your digital presence runs smoothly around the clock.
-      </p>
+      <div class="animate-fade-up animate-delay-3 mt-10 flex flex-wrap gap-4">
+        <a
+          href="https://portal.brighthorizon.co.za"
+          target="_blank"
+          rel="noreferrer"
+          class="btn-primary rounded-full px-6 py-3 text-sm font-semibold shadow-lg shadow-[#145A46]/30"
+        >
+          Get Started
+        </a>
+        <a href="/services" class="btn-secondary rounded-full px-6 py-3 text-sm font-semibold">
+          Our Services
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
+<section class="mx-auto max-w-6xl px-6 py-20">
+  <h2 class="animate-fade-up text-3xl font-semibold text-[#145A46] md:text-4xl">Five Pillars of Service</h2>
+  <p class="animate-fade-up animate-delay-1 mt-3 max-w-3xl text-[#1A1A1A]/80">
+    End-to-end solutions from technology to opportunity, built for organizations scaling across Africa.
+  </p>
+  <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+    <ServiceCard title="IT Services" icon="💻" description="Custom software development, ERP implementation, cloud infrastructure, and managed IT support." />
+    <ServiceCard title="Information & Cloud Security" icon="🔐" description="Security, cloud protection, integration, automation, POPIA/GDPR compliance, and pen testing." />
+    <ServiceCard title="Opportunity Brokerage" icon="🤝" description="Curated investment, trade, and partnership opportunities across key African growth sectors." />
+    <ServiceCard title="Travel & Trade Facilitation" icon="🌍" description="Business travel coordination, logistics support, and cross-border facilitation for execution." />
+  </div>
+</section>
+
+<section class="mx-auto max-w-6xl px-6 pb-8">
+  <div class="section-shell soft-gradient animate-fade-up p-10 text-center">
+    <h2 class="text-3xl font-semibold text-[#145A46]">Explore Our Solutions & Packages</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-sm text-[#1A1A1A]/80">
+      We do not just advise - we execute, connect, and deliver through structured service packages.
+    </p>
+    <a
+      href="https://portal.brighthorizon.co.za/shop"
+      target="_blank"
+      rel="noreferrer"
+      class="btn-primary mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold"
+    >
+      Explore Solutions
+    </a>
+  </div>
+</section>
+
+<section class="mx-auto max-w-6xl px-6 py-16">
+  <h2 class="animate-fade-up text-3xl font-semibold text-[#145A46] md:text-4xl">Sectors We Operate In</h2>
+  <p class="animate-fade-up animate-delay-1 mt-3 max-w-3xl text-[#1A1A1A]/80">
+    Agriculture, mining, infrastructure, property, import/export, tourism, and cybersecurity opportunities.
+  </p>
+  <div class="mt-10 grid gap-6 md:grid-cols-2">
+    <OpportunityCard
+      title="Kinshasa, DRC - Digital Infrastructure Rollout"
+      description="Active digital rollout programs, infrastructure modernization, and market-entry execution support."
+      image="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?auto=format&fit=crop&w=1400&q=75"
+    />
+    <OpportunityCard
+      title="Lualaba, DRC - Cobalt & Copper Supply Chain"
+      description="High-demand cobalt and copper chain opportunities with structured operational and partner facilitation."
+      image="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1400&q=75"
+    />
+    <OpportunityCard
+      title="Katanga, DRC - Agriculture & Processing"
+      description="Agriculture and agri-processing opportunities covering production, processing, and cross-border supply chain."
+      image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=75"
+    />
+    <OpportunityCard
+      title="Cape Town, South Africa - Property & Tourism"
+      description="Property and tourism growth initiatives supported by technology-led execution and facilitation."
+      image="https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?auto=format&fit=crop&w=1400&q=75"
+    />
+  </div>
+</section>
+
+<section class="mx-auto max-w-6xl px-6 pb-20">
+  <div class="section-shell animate-fade-up p-10 text-center">
+    <h2 class="text-3xl font-semibold text-[#145A46]">Ready to Grow with Us?</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-sm text-[#1A1A1A]/80">
+      Whether you need IT support, a security audit, or access to African opportunities - we are here.
+    </p>
+    <a
+      href="https://portal.brighthorizon.co.za/contactus"
+      target="_blank"
+      rel="noreferrer"
+      class="btn-primary mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold"
+    >
+      Work With Us
+    </a>
+  </div>
+</section>
 </MainLayout>

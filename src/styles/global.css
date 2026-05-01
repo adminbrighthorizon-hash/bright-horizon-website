@@ -1,18 +1,33 @@
 @import "tailwindcss";
 
-/* Professional styling enhancements */
+:root {
+  --bh-primary: #1f7a63;
+  --bh-dark: #145a46;
+  --bh-accent: #2e9c7e;
+  --bh-beige: #f5f1e8;
+  --bh-light-beige: #faf7f2;
+  --bh-white: #ffffff;
+  --bh-text: #1a1a1a;
+}
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
+    Cantarell, "Helvetica Neue", sans-serif;
   line-height: 1.6;
+  color: var(--bh-text);
+  background: var(--bh-beige);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.02em;
 }
 
 a {
@@ -20,27 +35,110 @@ a {
   text-decoration: none;
 }
 
-/* Smooth transitions for better UX */
 * {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Professional focus states */
 input:focus-visible,
 textarea:focus-visible,
-button:focus-visible {
+button:focus-visible,
+a:focus-visible {
   outline: none;
+  box-shadow: 0 0 0 3px rgba(31, 122, 99, 0.2);
+  border-radius: 0.6rem;
 }
 
-/* Form input enhancements */
 input,
 textarea {
-  background-color: #ffffff;
-  border-color: #e5e7eb;
+  background-color: var(--bh-white);
+  border-color: #d4d4d4;
 }
 
 input:focus,
 textarea:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  border-color: var(--bh-primary);
+  box-shadow: 0 0 0 3px rgba(31, 122, 99, 0.12);
+}
+
+.section-shell {
+  border: 1px solid rgba(31, 122, 99, 0.1);
+  background: var(--bh-light-beige);
+  border-radius: 1.5rem;
+  box-shadow: 0 18px 48px -30px rgba(20, 90, 70, 0.4);
+}
+
+.soft-gradient {
+  background: linear-gradient(
+    125deg,
+    rgba(31, 122, 99, 0.12),
+    rgba(245, 241, 232, 0.95),
+    rgba(46, 156, 126, 0.16)
+  );
+  background-size: 200% 200%;
+  animation: gradientShift 16s ease infinite;
+}
+
+.hero-overlay {
+  background: radial-gradient(circle at top right, rgba(46, 156, 126, 0.25), transparent 46%),
+    radial-gradient(circle at bottom left, rgba(20, 90, 70, 0.22), transparent 52%);
+}
+
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animate-delay-1 {
+  animation-delay: 0.1s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.2s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-4 {
+  animation-delay: 0.4s;
+}
+
+.btn-primary {
+  background: var(--bh-primary);
+  color: var(--bh-white);
+}
+
+.btn-primary:hover {
+  background: var(--bh-dark);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(31, 122, 99, 0.25);
+  color: var(--bh-dark);
+  background: rgba(255, 255, 255, 0.65);
+}
+
+.btn-secondary:hover {
+  background: rgba(31, 122, 99, 0.08);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

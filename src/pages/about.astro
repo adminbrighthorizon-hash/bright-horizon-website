@@ -2,48 +2,64 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout>
-
-<h1 class="text-5xl font-bold mb-8 text-gray-900">About Bright Horizon</h1>
-
-<div class="grid md:grid-cols-2 gap-12 mb-12">
-  <div>
-    <h2 class="text-2xl font-bold mb-4 text-gray-900">Our Story</h2>
-    <p class="text-lg text-gray-700 leading-relaxed mb-4">
-      Founded with a clear vision: to help businesses thrive in the digital age. Bright Horizon emerged from a passion for creating exceptional digital solutions that drive real business results.
-    </p>
-    <p class="text-lg text-gray-700 leading-relaxed">
-      What started as a small development team has grown into a trusted partner for businesses across industries, from ambitious startups to established enterprises.
+<MainLayout
+  title="About Us | Bright Horizon"
+  description="Bright Horizon combines technology, security, and African opportunity through practical execution and trusted partnerships."
+>
+<section class="soft-gradient border-b border-[#1F7A63]/10">
+  <div class="mx-auto max-w-6xl px-6 py-20">
+    <h1 class="animate-fade-up text-4xl font-bold text-[#145A46] md:text-5xl">About Bright Horizon</h1>
+    <p class="animate-fade-up animate-delay-1 mt-4 max-w-3xl text-lg text-[#1A1A1A]/85">
+      We combine technology, security, and opportunity facilitation for organizations operating in Africa's fastest-growing markets.
     </p>
   </div>
-  
-  <div>
-    <h2 class="text-2xl font-bold mb-4 text-gray-900">Our Mission</h2>
-    <p class="text-lg text-gray-700 leading-relaxed mb-4">
-      We believe in the transformative power of technology. Our mission is to empower businesses with digital solutions that are not just technically sound, but also strategically aligned with their goals.
-    </p>
-    <p class="text-lg text-gray-700 leading-relaxed">
-      Every project, every code line, and every design decision is made with one goal in mind: helping our clients succeed.
-    </p>
-  </div>
-</div>
+</section>
 
-<div class="bg-blue-50 p-8 rounded-lg border border-blue-100">
-  <h2 class="text-2xl font-bold mb-6 text-gray-900">Our Values</h2>
-  <div class="grid md:grid-cols-3 gap-8">
-    <div>
-      <h3 class="font-semibold text-lg mb-2 text-blue-600">Excellence</h3>
-      <p class="text-gray-700">We maintain the highest standards in everything we do, from code quality to customer service.</p>
-    </div>
-    <div>
-      <h3 class="font-semibold text-lg mb-2 text-blue-600">Innovation</h3>
-      <p class="text-gray-700">We stay ahead of industry trends and leverage cutting-edge technologies to deliver competitive advantages.</p>
-    </div>
-    <div>
-      <h3 class="font-semibold text-lg mb-2 text-blue-600">Partnership</h3>
-      <p class="text-gray-700">Your success is our success. We work as an extension of your team with transparency and collaboration.</p>
-    </div>
+<section class="mx-auto max-w-6xl px-6 py-16">
+  <div class="grid gap-6 md:grid-cols-3">
+    <article class="section-shell animate-fade-up p-8 md:col-span-2">
+      <h2 class="mb-3 text-2xl font-semibold text-[#145A46]">Our Story</h2>
+      <p class="text-sm leading-relaxed text-[#1A1A1A]/85">
+        Bright Horizon is led by an experienced IT professional with over a decade of delivery across enterprise technology, information security, and cross-border business facilitation.
+        The company was founded to solve two connected challenges: modernizing operations securely and helping clients access high-value opportunities.
+      </p>
+    </article>
+    <article class="section-shell animate-fade-up animate-delay-1 p-8">
+      <h2 class="mb-3 text-2xl font-semibold text-[#145A46]">Mission</h2>
+      <p class="text-sm leading-relaxed text-[#1A1A1A]/85">
+        Combining technology and opportunity to create practical, secure, and scalable outcomes through execution - not just advice.
+      </p>
+    </article>
+    <article class="section-shell animate-fade-up animate-delay-2 p-8">
+      <h2 class="mb-3 text-2xl font-semibold text-[#145A46]">Regional Focus</h2>
+      <p class="text-sm leading-relaxed text-[#1A1A1A]/85">
+        Operational focus in South Africa and the Democratic Republic of Congo, with a Pan-African network spanning key markets.
+      </p>
+    </article>
+    <article class="section-shell animate-fade-up animate-delay-3 p-8 md:col-span-2">
+      <h2 class="mb-3 text-2xl font-semibold text-[#145A46]">How We Work</h2>
+      <p class="text-sm leading-relaxed text-[#1A1A1A]/85">
+        We engage through a simple model: submit request, assess and structure, match and connect, execute and deliver, then support and scale.
+        This keeps delivery practical for technology programs and opportunity transactions alike.
+      </p>
+    </article>
   </div>
-</div>
+</section>
 
+<section class="mx-auto max-w-6xl px-6 pb-20">
+  <div class="section-shell animate-fade-up p-10 text-center">
+    <h2 class="text-3xl font-semibold text-[#145A46]">Work With a Trusted Partner</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-sm text-[#1A1A1A]/80">
+      Discuss your next technology or opportunity initiative with our team.
+    </p>
+    <a
+      href="https://portal.brighthorizon.co.za/contactus"
+      target="_blank"
+      rel="noreferrer"
+      class="btn-primary mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold"
+    >
+      Work With Us
+    </a>
+  </div>
+</section>
 </MainLayout>

@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+  items: string[];
+  ctaHref?: string;
+}
+
+const { title, summary, items, ctaHref = "https://portal.brighthorizon.co.za" } = Astro.props;
+---
+
+<section class="section-shell animate-fade-up p-8">
+  <h2 class="mb-3 text-2xl font-semibold text-[#145A46]">{title}</h2>
+  <p class="mb-5 text-sm leading-relaxed text-[#1A1A1A]/85">{summary}</p>
+  <ul class="mb-7 space-y-2 text-sm text-[#1A1A1A]">
+    {items.map((item) => <li>• {item}</li>)}
+  </ul>
+  <a
+    href={ctaHref}
+    target="_blank"
+    rel="noreferrer"
+    class="inline-flex rounded-full bg-[#1F7A63] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#145A46]"
+  >
+    View Solutions
+  </a>
+</section>

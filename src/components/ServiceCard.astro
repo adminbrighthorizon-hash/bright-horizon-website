@@ -1,0 +1,18 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+const { title, description, icon } = Astro.props;
+---
+
+<article class="group section-shell animate-fade-up p-7">
+  <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#1F7A63]/12 text-2xl text-[#145A46]">
+    {icon}
+  </div>
+  <h3 class="mb-2 text-xl font-semibold text-[#145A46]">{title}</h3>
+  <p class="text-sm leading-relaxed text-[#1A1A1A]/85">{description}</p>
+  <div class="mt-5 h-1 w-0 rounded-full bg-[#2E9C7E] transition-all duration-300 group-hover:w-14"></div>
+</article>
