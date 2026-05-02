@@ -62,8 +62,8 @@ const heroSlideDurationSec = heroSlides.length * 7;
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Johannesburg</span>
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Kinshasa</span>
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Kolwezi</span>
-        <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Lubumbashi</span>
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Cape Town</span>
+        <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Lubumbashi</span>
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Nairobi</span>
       </div>
 
@@ -104,9 +104,7 @@ const heroSlideDurationSec = heroSlides.length * 7;
       We do not just advise - we execute, connect, and deliver through structured service packages.
     </p>
     <a
-      href="https://portal.brighthorizon.co.za/solutions"
-      target="_blank"
-      rel="noreferrer"
+      href={`${baseUrl}services`}
       class="btn-primary btn-shine mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold"
     >
       Explore Solutions
@@ -121,6 +119,11 @@ const heroSlideDurationSec = heroSlides.length * 7;
   </p>
   <div class="mt-10 grid gap-6 md:grid-cols-2">
     <OpportunityCard
+      title="Johannesburg, South Africa - FinTech Ops & Cyber Resilience"
+      description="From digital onboarding to secure transaction workflows, we help fintech and enterprise teams modernize core operations with cloud platforms, compliance-ready controls, and automation that drives faster growth."
+      image="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1400&q=80"
+    />
+    <OpportunityCard
       title="Kinshasa, DRC - Connected City & Enterprise Uplift"
       description="From fiber backbone to smart-service platforms, we help public and private operators launch resilient digital infrastructure that scales across institutions, campuses, and business districts."
       image="https://images.unsplash.com/photo-1465447142348-e9952c393450?auto=format&fit=crop&w=1400&q=80"
@@ -131,19 +134,14 @@ const heroSlideDurationSec = heroSlides.length * 7;
       image="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1400&q=75"
     />
     <OpportunityCard
-      title="Lubumbashi, DRC - AgriTech Production & Processing Hubs"
-      description="Mechanized farming meets digital operations: crop planning, post-harvest logistics, storage visibility, and export pipeline coordination for high-value agricultural output."
-      image="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1400&q=80"
-    />
-    <OpportunityCard
       title="Cape Town, South Africa - Smart Property & Tourism Experiences"
       description="Technology-led property and tourism initiatives with digital booking flows, analytics-driven operations, and secure customer engagement to increase occupancy, spend, and repeat visits."
       image="https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?auto=format&fit=crop&w=1400&q=75"
     />
     <OpportunityCard
-      title="Johannesburg, South Africa - FinTech Ops & Cyber Resilience"
-      description="From digital onboarding to secure transaction workflows, we help fintech and enterprise teams modernize core operations with cloud platforms, compliance-ready controls, and automation that drives faster growth."
-      image="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1400&q=80"
+      title="Lubumbashi, DRC - AgriTech Production & Processing Hubs"
+      description="Mechanized farming meets digital operations: crop planning, post-harvest logistics, storage visibility, and export pipeline coordination for high-value agricultural output."
+      image="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1400&q=80"
     />
     <OpportunityCard
       title="Nairobi, Kenya - Digital Commerce & Innovation Scale"
@@ -159,11 +157,11 @@ const heroSlideDurationSec = heroSlides.length * 7;
       </span>
     </div>
     <div class="mt-5 grid gap-2.5 text-sm md:grid-cols-2">
-      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Johannesburg - FinTech Ops & Cybersecurity</p>
-      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Kinshasa - Infrastructure & Digital Expansion</p>
-      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Lubumbashi - Agriculture & Processing Growth</p>
-      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Kolwezi - Mining & Supply Chain Opportunities</p>
-      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Cape Town - Property & Tourism Growth</p>
+      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Johannesburg - FinTech Ops & Cyber Resilience</p>
+      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Kinshasa - Connected City & Enterprise Uplift</p>
+      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Kolwezi - Smart Cobalt & Copper Supply Networks</p>
+      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Cape Town - Smart Property & Tourism Experiences</p>
+      <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Lubumbashi - AgriTech Production & Processing Hubs</p>
       <p class="rounded-xl border border-[#E1C178]/25 bg-[#0A2D27]/42 px-4 py-2.5 text-[#FFF6E2]">Nairobi - Digital Commerce & Innovation Scale</p>
     </div>
   </div>
