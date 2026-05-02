@@ -19,12 +19,17 @@ const baseUrl = import.meta.env.BASE_URL;
     <div class="hidden items-center gap-7 text-sm font-semibold md:flex">
       <a href={baseUrl} class="nav-pill">Home</a>
       <a href={`${baseUrl}services`} class="nav-pill">Services</a>
-      <a href={`${baseUrl}Solutions`} class="nav-pill">
+      <a
+        href="https://portal.brighthorizon.co.za/solutions"
+        target="_blank"
+        rel="noreferrer"
+        class="nav-pill"
+      >
         Solutions
       </a>
       <a href={`${baseUrl}about`} class="nav-pill">About Us</a>
       <a
-        href={`${baseUrl}contact`}
+        href="https://dev.brighthorizon.co.za/contactus"
         class="btn-primary btn-shine rounded-full px-5 py-2 shadow-md shadow-[#145A46]/30"
       >
         Get Started
@@ -38,7 +43,7 @@ const baseUrl = import.meta.env.BASE_URL;
       <div class="absolute right-6 mt-2 flex w-52 flex-col rounded-xl border border-[#1F7A63]/10 bg-[#FAF7F2] p-3 shadow-lg">
         <a href={baseUrl} class="nav-pill nav-pill--mobile">Home</a>
         <a href={`${baseUrl}services`} class="nav-pill nav-pill--mobile">Services</a>
-        <a href={`${baseUrl}Solutions`} class="nav-pill nav-pill--mobile">Solutions</a>
+        <a href="https://portal.brighthorizon.co.za/solutions" target="_blank" rel="noreferrer" class="nav-pill nav-pill--mobile">Solutions</a>
         <a href={`${baseUrl}about`} class="nav-pill nav-pill--mobile">About Us</a>
         <a href={`${baseUrl}contact`} class="nav-pill nav-pill--mobile">Contact</a>
         <a

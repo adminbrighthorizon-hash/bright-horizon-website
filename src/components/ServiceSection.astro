@@ -3,23 +3,34 @@ interface Props {
   title: string;
   summary: string;
   items: string[];
+  image: string;
   ctaHref?: string;
 }
 
-const baseUrl = import.meta.env.BASE_URL;
-const { title, summary, items, ctaHref = `${baseUrl}Solutions` } = Astro.props;
+const { title, summary, items, image, ctaHref = "https://portal.brighthorizon.co.za/solutions" } = Astro.props;
 ---
 
-<section class="section-shell animate-fade-up p-8">
-  <h2 class="mb-3 text-2xl font-semibold text-[#145A46]">{title}</h2>
-  <p class="mb-5 text-sm leading-relaxed text-[#1A1A1A]/85">{summary}</p>
-  <ul class="mb-7 space-y-2 text-sm text-[#1A1A1A]">
-    {items.map((item) => <li>• {item}</li>)}
-  </ul>
-  <a
-    href={ctaHref}
-    class="inline-flex rounded-full bg-[#1F7A63] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#145A46]"
-  >
-    View Solutions
-  </a>
-</section>
+<article class="section-shell animate-fade-up overflow-hidden">
+  <img
+    src={image}
+    alt={`${title} service image`}
+    loading="lazy"
+    decoding="async"
+    class="h-48 w-full object-cover"
+  />
+  <div class="p-7">
+    <h2 class="mb-3 text-2xl font-semibold text-[#145A46]">{title}</h2>
+    <p class="mb-5 text-sm leading-relaxed text-[#1A1A1A]/85">{summary}</p>
+    <ul class="mb-7 space-y-2 text-sm text-[#1A1A1A]">
+      {items.map((item) => <li>• {item}</li>)}
+    </ul>
+    <a
+      href={ctaHref}
+      target="_blank"
+      rel="noreferrer"
+      class="inline-flex rounded-full bg-[#1F7A63] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#145A46]"
+    >
+      View Solutions
+    </a>
+  </div>
+</article>

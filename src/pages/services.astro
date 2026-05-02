@@ -1,8 +1,6 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import ServiceSection from "../components/ServiceSection.astro";
-
-const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <MainLayout
@@ -13,31 +11,47 @@ const baseUrl = import.meta.env.BASE_URL;
   <div class="mx-auto max-w-6xl px-6 py-20">
     <h1 class="animate-fade-up text-4xl font-bold text-[#145A46] md:text-5xl">Services Built for Execution</h1>
     <p class="animate-fade-up animate-delay-1 mt-4 max-w-3xl text-lg text-[#1A1A1A]/85">
-      End-to-end delivery for Startups and SMEs, from technology capability to market execution with measurable outcomes.
+      Attractive, practical solutions for Startups and SMEs: from IT and cybersecurity to cross-border travel support and opportunity brokerage.
     </p>
   </div>
 </section>
 
-<section class="mx-auto grid max-w-6xl gap-6 px-6 py-16 md:grid-cols-2">
+<section class="mx-auto grid max-w-6xl gap-6 px-6 py-16 md:grid-cols-2 xl:grid-cols-3">
   <ServiceSection
     title="IT & Cloud"
-    summary="Custom software development, ERP implementation, system integration, and cloud infrastructure for businesses scaling in Africa."
-    items={["System integration", "Cloud solutions", "Web design"]}
+    image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1400&q=80"
+    summary="Build a resilient digital backbone with tailored systems, cloud architecture, and implementation support that grows with your business."
+    items={["Custom software and web platforms", "ERP and business systems rollout", "Cloud migration and optimization"]}
   />
   <ServiceSection
     title="IAM & Security"
-    summary="Information and cloud security with identity governance, risk control, compliance alignment, and penetration testing."
-    items={["Identity governance", "Access control", "Security frameworks"]}
+    image="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80"
+    summary="Protect identities, systems, and data using governance-first security strategies aligned to compliance and operational risk controls."
+    items={["Identity governance and lifecycle", "Access control and policy enforcement", "Security baselines and advisory"]}
   />
   <ServiceSection
     title="Automation & Reporting"
-    summary="Process automation, API-driven orchestration, and reporting dashboards that improve control, speed, and visibility."
-    items={["Workflow automation", "API integrations", "Reporting dashboards"]}
+    image="https://images.unsplash.com/photo-1551281044-8b4b6ddf2353?auto=format&fit=crop&w=1400&q=80"
+    summary="Increase speed and visibility with automated workflows and reporting systems that turn operations into measurable outcomes."
+    items={["Workflow and approval automation", "API integrations across platforms", "Executive and operational dashboards"]}
   />
   <ServiceSection
     title="Digital Services"
-    summary="Operational services and consulting for continuity, compliance, and execution support in fast-moving environments."
-    items={["SSL certificate renewals", "Software license management", "Consulting services"]}
+    image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80"
+    summary="Keep your environment stable and compliant with managed digital operations support and practical technical consulting."
+    items={["SSL certificate and domain operations", "Software license management", "Advisory and implementation consulting"]}
+  />
+  <ServiceSection
+    title="Opportunity Brokerage"
+    image="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=80"
+    summary="Connect to vetted strategic opportunities through regional market insight, partner facilitation, and deal-readiness support."
+    items={["Partnership and market-entry facilitation", "Opportunity sourcing and qualification", "Execution planning for growth initiatives"]}
+  />
+  <ServiceSection
+    title="Travel & Trade Facilitation"
+    image="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80"
+    summary="Enable smoother cross-border business movement with structured travel planning and trade execution support."
+    items={["Business travel coordination", "Trade and logistics support", "Cross-border execution assistance"]}
   />
 </section>
 
@@ -48,7 +62,9 @@ const baseUrl = import.meta.env.BASE_URL;
       Full-stack IT, cybersecurity-first delivery, and practical execution support across South Africa, DRC, and the region.
     </p>
     <a
-      href={`${baseUrl}Solutions`}
+      href="https://dev.brighthorizon.co.za/solutions"
+      target="_blank"
+      rel="noreferrer"
       class="btn-primary mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold"
     >
       Visit Solutions Portal
