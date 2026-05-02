@@ -107,13 +107,11 @@ textarea:focus {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
     radial-gradient(circle at 20% 20%, rgba(199, 156, 73, 0.34), transparent 34%),
     radial-gradient(circle at 82% 82%, rgba(255, 243, 216, 0.22), transparent 32%),
     radial-gradient(circle at 52% 8%, rgba(225, 193, 120, 0.16), transparent 28%);
-  background-size: 36px 36px, 36px 36px, auto, auto;
-  animation: glowDrift 24s ease-in-out infinite alternate;
+  background-size: auto;
+  opacity: 0.75;
   z-index: -1;
 }
 
@@ -127,15 +125,15 @@ textarea:focus {
 
 .hero-slide {
   position: absolute;
-  inset: -4%;
+  inset: -2%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: var(--hero-image);
   opacity: 0;
-  transform: scale(1.06) translate3d(0, 0, 0);
-  filter: brightness(1.12) contrast(1.14) saturate(1.14);
-  animation: heroCrossfade var(--hero-cycle, 24s) linear infinite, heroPan var(--hero-cycle, 24s) ease-in-out infinite;
+  transform: scale(1.04) translateZ(0);
+  filter: brightness(1.1) contrast(1.1) saturate(1.08);
+  animation: heroCrossfade var(--hero-cycle, 24s) linear infinite, heroBreath var(--hero-cycle, 24s) ease-in-out infinite;
   animation-delay: var(--hero-delay, 0s);
   animation-fill-mode: both;
   will-change: transform, opacity;
@@ -150,11 +148,11 @@ textarea:focus {
 }
 
 .hero-interactive:hover::before {
-  transform: scale(1.06);
+  transform: none;
 }
 
 .hero-interactive:hover::after {
-  transform: translate3d(0, -10px, 0);
+  transform: none;
 }
 
 .hero-interactive:hover .glass-surface {
@@ -476,13 +474,25 @@ a:hover .brand-wordmark::after {
 
 @keyframes heroPan {
   0% {
-    transform: scale(1.06) translate3d(-0.4%, -0.2%, 0);
+    transform: scale(1.04) translateZ(0);
   }
   50% {
-    transform: scale(1.11) translate3d(0.8%, -0.7%, 0);
+    transform: scale(1.06) translateZ(0);
   }
   100% {
-    transform: scale(1.08) translate3d(-0.7%, 0.6%, 0);
+    transform: scale(1.05) translateZ(0);
+  }
+}
+
+@keyframes heroBreath {
+  0% {
+    transform: scale(1.04) translateZ(0);
+  }
+  50% {
+    transform: scale(1.06) translateZ(0);
+  }
+  100% {
+    transform: scale(1.05) translateZ(0);
   }
 }
 
@@ -502,5 +512,29 @@ a:hover .brand-wordmark::after {
   }
   50% {
     transform: translateY(-12px);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slide {
+    animation: heroCrossfade var(--hero-cycle, 24s) linear infinite;
+    transform: scale(1.02) translateZ(0);
+  }
+
+  .floating-orb {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide,
+  .floating-orb,
+  .soft-gradient,
+  .consult-btn {
+    animation: none !important;
+  }
+
+  .hero-slide {
+    opacity: 1;
   }
 }
