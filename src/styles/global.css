@@ -125,18 +125,18 @@ textarea:focus {
 
 .hero-slide {
   position: absolute;
-  inset: -2%;
+  inset: -5%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: var(--hero-image);
   opacity: 0;
-  transform: scale(1.04) translateZ(0);
-  filter: brightness(1.1) contrast(1.1) saturate(1.08);
-  animation: heroCrossfade var(--hero-cycle, 24s) linear infinite, heroBreath var(--hero-cycle, 24s) ease-in-out infinite;
+  transform: scale(1.0) translateZ(0);
+  filter: brightness(1.05) contrast(1.06) saturate(1.08);
+  animation: heroKenBurns var(--hero-cycle, 24s) ease-in-out infinite;
   animation-delay: var(--hero-delay, 0s);
   animation-fill-mode: both;
-  will-change: transform, opacity;
+  will-change: opacity;
   backface-visibility: hidden;
 }
 
@@ -454,45 +454,26 @@ a:hover .brand-wordmark::after {
   }
 }
 
-@keyframes heroCrossfade {
+@keyframes heroKenBurns {
   0% {
     opacity: 0;
+    transform: scale(1.0) translateZ(0);
   }
   6% {
     opacity: 1;
+    transform: scale(1.02) translateZ(0);
   }
   12% {
     opacity: 1;
+    transform: scale(1.04) translateZ(0);
   }
   18% {
     opacity: 0;
+    transform: scale(1.06) translateZ(0);
   }
   100% {
     opacity: 0;
-  }
-}
-
-@keyframes heroPan {
-  0% {
-    transform: scale(1.04) translateZ(0);
-  }
-  50% {
-    transform: scale(1.06) translateZ(0);
-  }
-  100% {
-    transform: scale(1.05) translateZ(0);
-  }
-}
-
-@keyframes heroBreath {
-  0% {
-    transform: scale(1.04) translateZ(0);
-  }
-  50% {
-    transform: scale(1.06) translateZ(0);
-  }
-  100% {
-    transform: scale(1.05) translateZ(0);
+    transform: scale(1.08) translateZ(0);
   }
 }
 
@@ -517,8 +498,8 @@ a:hover .brand-wordmark::after {
 
 @media (max-width: 768px) {
   .hero-slide {
-    animation: heroCrossfade var(--hero-cycle, 24s) linear infinite;
-    transform: scale(1.02) translateZ(0);
+    animation: heroKenBurns var(--hero-cycle, 24s) ease-in-out infinite;
+    inset: -3%;
   }
 
   .floating-orb {
@@ -536,5 +517,6 @@ a:hover .brand-wordmark::after {
 
   .hero-slide {
     opacity: 1;
+    transform: scale(1.04) translateZ(0);
   }
 }
