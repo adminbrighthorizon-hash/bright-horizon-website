@@ -1,12 +1,17 @@
 # Bright Horizon Website
 
-Marketing website for Bright Horizon, built with Astro and Tailwind CSS.
+Official marketing website for Bright Horizon, built with Astro and Tailwind CSS.
 
-## Stack
+## Tech Stack
 
 - Astro 6
-- Tailwind CSS 4
-- Node.js 22+
+- Tailwind CSS 4 (via Vite plugin)
+- Node.js 22.12+
+
+## Requirements
+
+- Node.js >= 22.12.0
+- npm >= 10
 
 ## Local Development
 
@@ -16,19 +21,19 @@ Marketing website for Bright Horizon, built with Astro and Tailwind CSS.
 npm install
 ```
 
-2. Start development server:
+2. Start the development server:
 
-<!-- ```bash -->
+```bash
 npm run dev
 ```
 
-3. Open:
+3. Open the site:
 
 http://localhost:4321
 
 ## Build and Preview
 
-Build production assets:
+Build production output:
 
 ```bash
 npm run build
@@ -40,65 +45,68 @@ Preview production build locally:
 npm run preview
 ```
 
-## Deployment Flow
+## NPM Scripts
 
-This repository uses branch-based deployment:
+- `npm run dev` - Start Astro dev server
+- `npm run build` - Create production build
+- `npm run preview` - Serve built output locally
+- `npm run astro -- <command>` - Run Astro CLI commands
 
-1. Push to dev branch:
+## Deployment Model
+
+This repo uses branch-based deployments.
+
+1. `dev` branch
 - Deploys to GitHub Pages via GitHub Actions
 
-2. Merge to main branch:
-- Deploys to Cloudflare Pages via GitHub Actions
+2. `main` branch
+- Deploys to Cloudflare for production
 
-Workflow files:
-
-- .github/workflows/deploy-dev-github-pages.yml
-- .github/workflows/deploy-main-cloudflare.yml
+The Astro config automatically adjusts `site` and `base` for GitHub Pages when `DEPLOY_TARGET=github-pages`.
 
 ## Domains
 
-Primary production domain:
+- Production: https://www.brighthorizon.co.za
+- Development/preview: https://dev.brighthorizon.co.za
 
-- https://www.brighthorizon.co.za
+Default Cloudflare preview/workers domains may also exist depending on deployment settings.
 
-Temporary/default Cloudflare domains may exist for preview/fallback:
+## Edge and Security Headers
 
-- bright-horizon-website.brighthorizonza.workers.dev
-- *-bright-horizon-website.brighthorizonza.workers.dev
+Cloudflare-compatible edge files are committed in `public`:
 
-## SSL and Canonical Host
+- `public/_redirects`
+- `public/_headers`
 
-This project includes Cloudflare-compatible edge files in public:
-
-- public/_redirects
-- public/_headers
-
-These enforce:
+These are used for:
 
 - HTTP to HTTPS redirects
-- Apex to www redirect
-- Security headers including HSTS
+- Apex-to-www behavior
+- Security headers (including HSTS where configured)
 
-Cloudflare dashboard settings should also be enabled:
+Recommended Cloudflare dashboard settings:
 
 1. SSL/TLS mode: Full (strict)
 2. Always Use HTTPS: On
-3. Redirect rule from brighthorizon.co.za to www.brighthorizon.co.za
+3. Canonical redirect from `brighthorizon.co.za` to `www.brighthorizon.co.za`
 
-## Required GitHub Secrets (Cloudflare Deploy)
+## Required CI/CD Secrets
 
-Set these in GitHub repository secrets:
+Set these in GitHub repository secrets for Cloudflare deployment workflows:
 
-- CLOUDFLARE_API_TOKEN
-- CLOUDFLARE_ACCOUNT_ID
-- CLOUDFLARE_PAGES_PROJECT
+- `CLOUDFLARE_API_TOKEN`
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_PAGES_PROJECT`
 
 ## Project Structure
 
-Key directories:
+- `src/pages` - Route-based pages
+- `src/components` - Reusable UI components
+- `src/layouts` - Page layouts (`MainLayout.astro`, `Layout.astro`)
+- `src/styles` - Global styling (`global.css`)
+- `public` - Static assets, redirects, and headers
 
-- src/pages: route pages
-- src/components: reusable UI components
-- src/layouts: layout wrappers
-- src/styles: global styles
-- public: static assets and edge config files
+## Notes
+
+- Primary site pages use `MainLayout.astro`.
+- Global visual system and homepage hero styling are maintained in `src/styles/global.css`.
