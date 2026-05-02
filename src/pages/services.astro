@@ -1,6 +1,8 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import ServiceSection from "../components/ServiceSection.astro";
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <MainLayout
@@ -46,9 +48,7 @@ import ServiceSection from "../components/ServiceSection.astro";
       Full-stack IT, cybersecurity-first delivery, and practical execution support across South Africa, DRC, and the region.
     </p>
     <a
-      href="https://portal.brighthorizon.co.za/solutions"
-      target="_blank"
-      rel="noreferrer"
+      href={`${baseUrl}Solutions`}
       class="btn-primary mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold"
     >
       Visit Solutions Portal
