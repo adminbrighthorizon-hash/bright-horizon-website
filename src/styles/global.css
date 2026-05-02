@@ -95,9 +95,9 @@ textarea:focus {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(7, 21, 19, 0.52) 0%, rgba(7, 21, 19, 0.24) 26%, rgba(7, 21, 19, 0) 54%),
-    linear-gradient(rgba(12, 36, 33, 0.4), rgba(12, 36, 33, 0.66)),
-    linear-gradient(115deg, rgba(199, 156, 73, 0.14), rgba(18, 70, 60, 0.12));
+    linear-gradient(to top, rgba(7, 21, 19, 0.42) 0%, rgba(7, 21, 19, 0.18) 28%, rgba(7, 21, 19, 0) 60%),
+    linear-gradient(rgba(12, 36, 33, 0.3), rgba(12, 36, 33, 0.54)),
+    linear-gradient(115deg, rgba(199, 156, 73, 0.18), rgba(18, 70, 60, 0.1));
   z-index: -2;
 }
 
@@ -111,7 +111,7 @@ textarea:focus {
     radial-gradient(circle at 20% 20%, rgba(199, 156, 73, 0.24), transparent 36%),
     radial-gradient(circle at 85% 80%, rgba(255, 249, 239, 0.16), transparent 34%);
   background-size: 36px 36px, 36px 36px, auto, auto;
-  animation: glowDrift 12s ease-in-out infinite alternate;
+  animation: glowDrift 24s ease-in-out infinite alternate;
   z-index: -1;
 }
 
@@ -120,6 +120,7 @@ textarea:focus {
   inset: 0;
   z-index: -3;
   overflow: hidden;
+  transform: translateZ(0);
 }
 
 .hero-slide {
@@ -130,10 +131,13 @@ textarea:focus {
   background-repeat: no-repeat;
   background-image: var(--hero-image);
   opacity: 0;
-  transform: scale(1.08);
+  transform: scale(1.06) translate3d(0, 0, 0);
+  filter: brightness(1.1) contrast(1.12) saturate(1.1);
   animation: heroCrossfade var(--hero-cycle, 24s) linear infinite, heroPan var(--hero-cycle, 24s) ease-in-out infinite;
   animation-delay: var(--hero-delay, 0s);
+  animation-fill-mode: both;
   will-change: transform, opacity;
+  backface-visibility: hidden;
 }
 
 .hero-interactive::before,
@@ -470,13 +474,13 @@ a:hover .brand-wordmark::after {
 
 @keyframes heroPan {
   0% {
-    transform: scale(1.12) translate3d(-1.2%, -0.6%, 0);
+    transform: scale(1.06) translate3d(-0.4%, -0.2%, 0);
   }
   50% {
-    transform: scale(1.22) translate3d(2.2%, -2.1%, 0);
+    transform: scale(1.11) translate3d(0.8%, -0.7%, 0);
   }
   100% {
-    transform: scale(1.15) translate3d(-2%, 1.8%, 0);
+    transform: scale(1.08) translate3d(-0.7%, 0.6%, 0);
   }
 }
 
@@ -485,7 +489,7 @@ a:hover .brand-wordmark::after {
     transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translate3d(0, -12px, 0);
+    transform: translate3d(0, -4px, 0);
   }
 }
 
