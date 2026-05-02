@@ -1,80 +1,304 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import ServiceSection from "../components/ServiceSection.astro";
 ---
 
 <MainLayout
   title="Services | Bright Horizon"
-  description="Six pillars of service from multi-cloud enablement and security to opportunity, travel, and trade facilitation."
+  description="Managed cloud hosting South Africa, Odoo deployment, affordable ERP for SMEs, digital transformation, and IT advisory for growing businesses."
 >
+
+<!-- ─── HERO ─────────────────────────────────────────────────────────────── -->
 <section class="soft-gradient border-b border-[#1F7A63]/10">
-  <div class="mx-auto max-w-6xl px-6 py-20">
-    <h1 class="animate-fade-up text-4xl font-bold text-[#145A46] md:text-5xl">Services Built for Execution</h1>
-    <p class="animate-fade-up animate-delay-1 mt-4 max-w-3xl text-lg text-[#1A1A1A]/85">
-      Attractive, practical solutions for Startups and SMEs: from IT and cybersecurity to cross-border travel support and opportunity brokerage.
+  <div class="mx-auto max-w-6xl px-6 py-24 md:py-32">
+    <p class="animate-fade-up text-sm font-semibold uppercase tracking-[0.16em] text-[#175247]">Technology Services</p>
+    <h1 class="animate-fade-up animate-delay-1 mt-4 max-w-4xl text-4xl font-bold leading-tight text-[#103B34] md:text-6xl">
+      Smart Technology Solutions for Growing Businesses
+    </h1>
+    <p class="animate-fade-up animate-delay-2 mt-6 max-w-2xl text-lg text-[#1A1A1A]/80">
+      Cloud infrastructure, business systems, automation, and managed digital services — built to help companies scale efficiently across South Africa and beyond.
     </p>
+    <div class="animate-fade-up animate-delay-3 mt-8 flex flex-wrap gap-3">
+      <a
+        href="https://cal.com/bright-horizon-apzin0/bright-horizon-consultation-requirements-use-case-discussion?overlayCalendar=true"
+        target="_blank" rel="noreferrer"
+        class="btn-primary btn-shine inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold"
+      >
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Book a Consultation
+      </a>
+      <a
+        href="https://dev.brighthorizon.co.za/contactus"
+        target="_blank" rel="noreferrer"
+        class="inline-flex items-center gap-2 rounded-full border border-[#1F7A63]/40 px-6 py-3 text-sm font-semibold text-[#145A46] transition hover:bg-[#1F7A63]/8"
+      >
+        Request a Quote
+      </a>
+    </div>
   </div>
 </section>
 
-<section class="mx-auto grid max-w-6xl gap-6 px-6 py-16 md:grid-cols-2 xl:grid-cols-3">
-  <ServiceSection
-    title="IT & Cloud"
-    image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1400&q=80"
-    summary="Build a resilient digital backbone with tailored systems, cloud architecture, and implementation support that grows with your business across any major cloud platform."
-    items={["Custom software and web platforms", "ERP and business systems rollout", "Multi-cloud migration and optimisation (AWS, Azure, GCP, OCI)"]}
-  />
-  <ServiceSection
-    title="Cloud Enablement"
-    image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1400&q=80"
-    summary="We guide students, developers, and startups in setting up and using free-tier cloud environments across AWS, Azure, Google Cloud, and Oracle Cloud, enabling hands-on experience without upfront infrastructure costs."
-    items={["AWS Free Tier onboarding and setup", "Microsoft Azure Free Account configuration", "Google Cloud free credits and starter setup", "Oracle Cloud Always Free environment setup", "MFA and IAM security baseline across providers", "Basic VM provisioning and guided deployment labs"]}
-  />
-  <ServiceSection
-    title="IAM & Security"
-    image="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80"
-    summary="Protect identities, systems, and data using governance-first security strategies aligned to compliance and operational risk controls."
-    items={["Identity governance and lifecycle", "Access control and policy enforcement", "Security baselines and advisory"]}
-  />
-  <ServiceSection
-    title="Automation & Reporting"
-    image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
-    summary="Increase speed and visibility with automated workflows and reporting systems that turn operations into measurable outcomes."
-    items={["Workflow and approval automation", "API integrations across platforms", "Executive and operational dashboards"]}
-  />
-  <ServiceSection
-    title="Digital Services"
-    image="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80"
-    summary="Keep your environment stable and compliant with managed digital operations support and practical technical consulting."
-    items={["SSL certificate and domain operations", "Software license management", "Advisory and implementation consulting"]}
-  />
-  <ServiceSection
-    title="Opportunity Brokerage"
-    image="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1400&q=80"
-    summary="Connect to vetted strategic opportunities through regional market insight, partner facilitation, and deal-readiness support."
-    items={["Partnership and market-entry facilitation", "Opportunity sourcing and qualification", "Execution planning for growth initiatives"]}
-  />
-  <ServiceSection
-    title="Travel & Trade Facilitation"
-    image="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80"
-    summary="Enable smoother cross-border business movement with structured travel planning and trade execution support."
-    items={["Business travel coordination", "Trade and logistics support", "Cross-border execution assistance"]}
-  />
-</section>
-
-<section class="mx-auto max-w-6xl px-6 pb-20">
-  <div class="section-shell animate-fade-up p-10 text-center">
-    <h2 class="text-3xl font-semibold text-[#145A46]">Multi-Cloud Enablement. Market Execution. African Insight.</h2>
-    <p class="mx-auto mt-3 max-w-2xl text-sm text-[#1A1A1A]/80">
-      Our platform is designed to be cloud-agnostic, supporting AWS, Azure, Google Cloud, and Oracle Cloud environments depending on user needs, cost, and scalability requirements.
-    </p>
-    <a
-      href="https://www.brighthorizon.co.za/services/"
-      target="_blank"
-      rel="noreferrer"
-      class="btn-primary mt-7 inline-flex rounded-full px-6 py-3 text-sm font-semibold"
-    >
-      Visit Solutions Portal
-    </a>
+<!-- ─── SECTION 1: CLOUD & INFRASTRUCTURE ───────────────────────────────── -->
+<section class="mx-auto max-w-6xl px-6 py-20">
+  <div class="mb-10">
+    <p class="text-xs font-bold uppercase tracking-[0.18em] text-[#C79C49]">Section 01</p>
+    <h2 class="mt-2 text-3xl font-bold text-[#103B34] md:text-4xl">Cloud &amp; Infrastructure Services</h2>
+    <p class="mt-3 max-w-2xl text-[#1A1A1A]/70">Managed cloud hosting South Africa — secure, scalable, and built for business uptime. We design, deploy, and maintain cloud infrastructure that performs.</p>
+  </div>
+  <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <!-- Card -->
+    <div class="section-shell animate-fade-up flex flex-col p-7">
+      <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8F4F0]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F7A63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><polyline points="7 15 12 20 17 15"/></svg>
+      </div>
+      <h3 class="font-semibold text-[#103B34]">Managed Cloud Hosting</h3>
+      <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Secure and scalable hosting for websites, applications, and business systems on leading cloud platforms.</p>
+    </div>
+    <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.05s">
+      <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8F4F0]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F7A63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <h3 class="font-semibold text-[#103B34]">Server Deployment &amp; Administration</h3>
+      <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Linux/Windows server setup, monitoring, optimisation, and ongoing maintenance for production environments.</p>
+    </div>
+    <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.1s">
+      <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8F4F0]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F7A63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg>
+      </div>
+      <h3 class="font-semibold text-[#103B34]">Backup &amp; Disaster Recovery</h3>
+      <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Automated backup strategies and tested recovery plans to ensure business continuity under any failure scenario.</p>
+    </div>
+    <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.15s">
+      <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8F4F0]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F7A63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <h3 class="font-semibold text-[#103B34]">Performance Optimisation</h3>
+      <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Improve speed, uptime, and system reliability through proactive tuning and architecture reviews.</p>
+    </div>
   </div>
 </section>
+
+<!-- ─── SECTION 2: BUSINESS SYSTEMS & ERP ───────────────────────────────── -->
+<section class="border-y border-[#1F7A63]/8 bg-[#FAFDF9] py-20">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="mb-10">
+      <p class="text-xs font-bold uppercase tracking-[0.18em] text-[#C79C49]">Section 02</p>
+      <h2 class="mt-2 text-3xl font-bold text-[#103B34] md:text-4xl">Business Systems &amp; ERP</h2>
+      <p class="mt-3 max-w-2xl text-[#1A1A1A]/70">Odoo hosting South Africa and affordable ERP for SMEs — we implement and support the business systems that run your operations end to end.</p>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="section-shell animate-fade-up flex flex-col p-7">
+        <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#FDF6E8]">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C79C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+        </div>
+        <h3 class="font-semibold text-[#103B34]">Odoo Deployment &amp; Hosting</h3>
+        <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">End-to-end Odoo setup, managed hosting, version upgrades, and ongoing support for South African businesses.</p>
+      </div>
+      <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.05s">
+        <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#FDF6E8]">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C79C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3 class="font-semibold text-[#103B34]">ERP for SMEs</h3>
+        <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Affordable business systems covering sales, inventory, invoicing, CRM, and operations — sized right for growing companies.</p>
+      </div>
+      <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.1s">
+        <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#FDF6E8]">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C79C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        </div>
+        <h3 class="font-semibold text-[#103B34]">Workflow Automation</h3>
+        <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Reduce manual work using integrated digital processes — approvals, notifications, and data flows across your systems.</p>
+      </div>
+      <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.15s">
+        <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#FDF6E8]">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C79C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+        </div>
+        <h3 class="font-semibold text-[#103B34]">Multi-Branch Business Systems</h3>
+        <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Systems built for businesses with multiple stores, teams, or locations — unified operations from a single platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SECTION 3: SME DIGITAL OPERATING SYSTEM (NEW) ───────────────────── -->
+<section class="py-20" style="background: linear-gradient(160deg, #fffcf5 0%, #fdf4e0 55%, #fef9ef 100%); border-bottom: 1px solid rgba(199,156,73,0.18);">
+  <div class="mx-auto max-w-6xl px-6">
+    <!-- Header -->
+    <div class="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+      <div>
+        <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-[#C79C49]/40 bg-[#C79C49]/10 px-3.5 py-1.5">
+          <span class="h-1.5 w-1.5 rounded-full bg-[#C79C49]" style="box-shadow: 0 0 5px rgba(199,156,73,0.7);"></span>
+          <span class="text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#6A4917]">New — SME Product</span>
+        </div>
+        <h2 class="text-3xl font-bold text-[#103B34] md:text-4xl">Affordable Business Operating Systems for SMEs</h2>
+        <p class="mt-3 max-w-2xl text-[#1A1A1A]/70">
+          A ready-to-use monthly business platform for South African small businesses. Ideal for retail stores, service businesses, startups, and growing operations — no IT team required.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pricing Cards -->
+    <div class="grid gap-6 md:grid-cols-3">
+      <!-- Starter -->
+      <div class="flex flex-col rounded-3xl border border-[#C79C49]/25 bg-white p-8 shadow-sm">
+        <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#6A4917]">Starter Business OS</p>
+        <p class="mt-2 text-3xl font-extrabold text-[#103B34]">R299<span class="text-base font-semibold text-[#1A1A1A]/50">/month</span></p>
+        <p class="mt-1 text-xs text-[#1A1A1A]/50">From — pricing based on users</p>
+        <div class="my-6 h-px bg-[#C79C49]/15"></div>
+        <ul class="flex-1 space-y-3 text-sm text-[#1A1A1A]/80">
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Point of Sale</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Basic Inventory</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Invoicing</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Team Chat</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Basic Reporting</li>
+        </ul>
+        <a href="https://dev.brighthorizon.co.za/contactus" target="_blank" rel="noreferrer" class="mt-7 inline-flex justify-center rounded-full border border-[#1F7A63]/40 px-5 py-2.5 text-sm font-semibold text-[#145A46] transition hover:bg-[#1F7A63]/8">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Growth — highlighted -->
+      <div class="flex flex-col rounded-3xl border border-[#1F7A63]/30 bg-white p-8 shadow-md" style="box-shadow: 0 16px 48px -20px rgba(31,122,99,0.22); position: relative; overflow: hidden;">
+        <div class="absolute inset-x-0 top-0 h-1 rounded-t-3xl" style="background: linear-gradient(90deg, #1F7A63, #C79C49);"></div>
+        <div class="mb-3 inline-flex self-start items-center gap-1.5 rounded-full bg-[#1F7A63]/10 px-2.5 py-1">
+          <span class="text-[0.65rem] font-bold uppercase tracking-wider text-[#175247]">Most Popular</span>
+        </div>
+        <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#175247]">Growth Business OS</p>
+        <p class="mt-2 text-3xl font-extrabold text-[#103B34]">R799<span class="text-base font-semibold text-[#1A1A1A]/50">/month</span></p>
+        <p class="mt-1 text-xs text-[#1A1A1A]/50">From — pricing based on users</p>
+        <div class="my-6 h-px bg-[#1F7A63]/15"></div>
+        <ul class="flex-1 space-y-3 text-sm text-[#1A1A1A]/80">
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Everything in Starter</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> CRM</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Purchasing</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Customer Database</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Advanced Reporting</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#1F7A63]">✓</span> Process Controls</li>
+        </ul>
+        <a href="https://dev.brighthorizon.co.za/contactus" target="_blank" rel="noreferrer" class="btn-primary mt-7 inline-flex justify-center rounded-full px-5 py-2.5 text-sm font-semibold">
+          Get Started
+        </a>
+      </div>
+
+      <!-- Add-ons -->
+      <div class="flex flex-col rounded-3xl border border-[#C79C49]/25 bg-[#FFFBF2] p-8">
+        <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#6A4917]">Optional Add-ons</p>
+        <p class="mt-2 text-base font-semibold text-[#103B34]">Extend any package</p>
+        <div class="my-6 h-px bg-[#C79C49]/15"></div>
+        <ul class="flex-1 space-y-3 text-sm text-[#1A1A1A]/80">
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#C79C49]">+</span> WhatsApp integration</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#C79C49]">+</span> Loyalty programs</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#C79C49]">+</span> Staff management</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#C79C49]">+</span> Additional users</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#C79C49]">+</span> Domain branding</li>
+          <li class="flex items-start gap-2.5"><span class="mt-0.5 text-[#C79C49]">+</span> Priority support</li>
+        </ul>
+        <a href="https://dev.brighthorizon.co.za/contactus" target="_blank" rel="noreferrer" class="mt-7 inline-flex justify-center rounded-full border border-[#C79C49]/40 px-5 py-2.5 text-sm font-semibold text-[#6A4917] transition hover:bg-[#C79C49]/8">
+          Enquire
+        </a>
+      </div>
+    </div>
+
+    <p class="mt-6 text-center text-xs text-[#1A1A1A]/45">SME packages are a productised offering. Enterprise consulting and custom deployments are scoped separately.</p>
+  </div>
+</section>
+
+<!-- ─── SECTION 4: IT ADVISORY & TRANSFORMATION ──────────────────────────── -->
+<section class="mx-auto max-w-6xl px-6 py-20">
+  <div class="mb-10">
+    <p class="text-xs font-bold uppercase tracking-[0.18em] text-[#C79C49]">Section 04</p>
+    <h2 class="mt-2 text-3xl font-bold text-[#103B34] md:text-4xl">IT Advisory &amp; Transformation</h2>
+    <p class="mt-3 max-w-2xl text-[#1A1A1A]/70">Digital transformation for SMEs and enterprises — we align technology strategy to business outcomes, not the other way round.</p>
+  </div>
+  <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="section-shell animate-fade-up flex flex-col p-7">
+      <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8F4F0]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F7A63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <h3 class="font-semibold text-[#103B34]">IT Strategy Consulting</h3>
+      <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Technology planning aligned to your growth goals — roadmaps, vendor selection, and investment guidance.</p>
+    </div>
+    <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.05s">
+      <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8F4F0]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F7A63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+      </div>
+      <h3 class="font-semibold text-[#103B34]">Digital Transformation</h3>
+      <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Modernise outdated manual business processes with structured digital workflows and system integration.</p>
+    </div>
+    <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.1s">
+      <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8F4F0]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F7A63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h3 class="font-semibold text-[#103B34]">Security Best Practices</h3>
+      <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Identity, access control, backups, and operational resilience — security built into your systems from the ground up.</p>
+    </div>
+    <div class="section-shell animate-fade-up flex flex-col p-7" style="animation-delay:0.15s">
+      <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-[#E8F4F0]">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F7A63" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h3 class="font-semibold text-[#103B34]">Startup Tech Advisory</h3>
+      <p class="mt-2 flex-1 text-sm text-[#1A1A1A]/75">Support for founders launching new products or services — architecture decisions, platform choices, and go-to-market tech.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SECTION 5: WHY BRIGHT HORIZON ────────────────────────────────────── -->
+<section class="border-y border-[#1F7A63]/8 bg-[#FAFDF9] py-20">
+  <div class="mx-auto max-w-6xl px-6">
+    <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-[0.18em] text-[#C79C49]">Why Choose Us</p>
+        <h2 class="mt-3 text-3xl font-bold text-[#103B34] md:text-4xl">Why Bright Horizon</h2>
+        <p class="mt-4 text-[#1A1A1A]/70">We combine cloud expertise, practical business systems knowledge, and deep understanding of the South African SME landscape to deliver real outcomes — not just projects.</p>
+      </div>
+      <ul class="grid gap-4 sm:grid-cols-2">
+        {[
+          { icon: "🇿🇦", label: "South African based support" },
+          { icon: "📈", label: "Affordable, scalable solutions" },
+          { icon: "☁️", label: "Cloud expertise across providers" },
+          { icon: "🏢", label: "SME growth focused" },
+          { icon: "🔧", label: "Custom + managed services" },
+          { icon: "💡", label: "Practical business-first advice" },
+        ].map((item) => (
+          <li class="flex items-center gap-3 rounded-2xl border border-[#C79C49]/18 bg-white px-5 py-4 text-sm font-medium text-[#103B34] shadow-sm">
+            <span class="text-xl" aria-hidden="true">{item.icon}</span>
+            {item.label}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ─── SECTION 6: FINAL CTA ─────────────────────────────────────────────── -->
+<section class="mx-auto max-w-6xl px-6 py-20">
+  <div class="overflow-hidden rounded-3xl relative" style="background: linear-gradient(160deg, #0f3c34 0%, #175247 55%, #1a6358 100%); border: 1px solid rgba(199,156,73,0.25); box-shadow: 0 32px 72px -36px rgba(10,35,31,0.55);">
+    <div class="absolute inset-x-0 top-0 h-1" style="background: linear-gradient(90deg, #c79c49, rgba(199,156,73,0.25));"></div>
+    <div class="absolute pointer-events-none" style="top:-60px;right:-60px;width:220px;height:220px;border-radius:50%;border:1px solid rgba(199,156,73,0.08);"></div>
+    <div class="relative px-8 py-14 text-center md:px-16 md:py-16">
+      <h2 class="text-3xl font-extrabold leading-tight text-[#fffaf1] md:text-4xl">Ready to Modernise Your Business?</h2>
+      <p class="mx-auto mt-4 max-w-xl text-sm leading-relaxed" style="color: rgba(255,244,222,0.7);">
+        Whether you need managed cloud hosting in South Africa, an affordable ERP for your SME, or strategic digital transformation support — we're ready to help you move forward.
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          href="https://dev.brighthorizon.co.za/contactus"
+          target="_blank" rel="noreferrer"
+          class="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold transition hover:opacity-90 active:scale-95"
+          style="background: linear-gradient(135deg, #e4cb97 0%, #d5b577 58%, #c79c49 138%); color: #0f3c34; box-shadow: 0 8px 24px -8px rgba(199,156,73,0.5);"
+        >
+          Contact Us
+        </a>
+        <a
+          href="https://cal.com/bright-horizon-apzin0/bright-horizon-consultation-requirements-use-case-discussion?overlayCalendar=true"
+          target="_blank" rel="noreferrer"
+          class="inline-flex items-center gap-2 rounded-full border px-6 py-3.5 text-sm font-semibold transition hover:bg-[rgba(199,156,73,0.1)] active:scale-95"
+          style="border-color: rgba(199,156,73,0.4); color: #ffe9bc;"
+        >
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Book Discovery Call
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </MainLayout>
