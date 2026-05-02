@@ -284,6 +284,26 @@ textarea:focus {
   padding: 0.55rem 0.75rem;
 }
 
+.consult-btn {
+  background: linear-gradient(135deg, #0f4b40 0%, #175247 55%, #1a6358 100%);
+  color: #fff4de;
+  border: 1px solid rgba(225, 193, 120, 0.45);
+  box-shadow: 0 0 0 0 rgba(23, 82, 71, 0), 0 18px 34px -20px rgba(10, 35, 31, 0.72), inset 0 1px 0 rgba(255, 244, 214, 0.22);
+  animation: consultPulse 2.8s ease-in-out infinite;
+}
+
+.consult-btn:hover {
+  background: linear-gradient(135deg, #115446 0%, #1e6b5c 55%, #217060 100%);
+  box-shadow: 0 0 0 0 rgba(23, 82, 71, 0), 0 22px 38px -18px rgba(10, 35, 31, 0.78), inset 0 1px 0 rgba(255, 244, 214, 0.3);
+  transform: translateY(-2px) scale(1.015);
+  color: #fffaf1;
+}
+
+@keyframes consultPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(23, 82, 71, 0.38), 0 18px 34px -20px rgba(10, 35, 31, 0.72), inset 0 1px 0 rgba(255, 244, 214, 0.22); }
+  50% { box-shadow: 0 0 0 5px rgba(23, 82, 71, 0), 0 18px 34px -20px rgba(10, 35, 31, 0.72), inset 0 1px 0 rgba(255, 244, 214, 0.22); }
+}
+
 .brand-wordmark::after {
   content: "";
   position: absolute;
