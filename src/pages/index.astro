@@ -38,16 +38,29 @@ const heroSlideDurationSec = heroSlides.length * 7;
   <span class="floating-orb bottom-12 left-[45%] h-12 w-12 bg-[#164C43]/35" style="animation-delay: 2.2s;"></span>
   <span class="floating-orb right-[28%] bottom-18 h-20 w-20 bg-[#E0B867]/20" style="animation-delay: 0.8s;"></span>
   <span class="floating-orb left-[26%] bottom-10 h-14 w-14 bg-[#FFF4D8]/18" style="animation-delay: 1.9s;"></span>
-  <div class="mx-auto max-w-6xl px-6 py-24 md:py-28">
-    <div class="glass-surface max-w-3xl rounded-3xl p-8 shadow-2xl shadow-[#103B34]/30 md:p-10">
-      <p class="animate-fade-up text-sm font-semibold uppercase tracking-[0.16em] text-[#164C43]">Bright Horizon - Africa</p>
-      <h1 class="animate-fade-up animate-delay-1 mt-4 text-4xl font-bold leading-tight text-[#103B34] md:text-6xl">
+  <div class="mx-auto flex max-w-6xl items-end px-6 py-24 md:py-28">
+    <div class="animate-fade-up mb-2 rounded-full border border-[#E1C178]/35 bg-[#0E3D35]/45 px-4 py-2 text-xs font-semibold uppercase tracking-[0.14em] text-[#FFE7B5] backdrop-blur-sm md:mb-6">
+      Pan-African Technology & Opportunity Partner
+    </div>
+  </div>
+</section>
+
+<section class="relative mx-auto -mt-12 max-w-6xl px-6 pb-8 md:-mt-16">
+  <div class="animate-fade-up overflow-hidden rounded-[1.9rem] border border-[#C79C49]/30 bg-linear-to-br from-[#fffaf1]/95 via-[#fff4de]/96 to-[#f4e7cd]/95 p-8 shadow-[0_34px_70px_-34px_rgba(10,35,31,0.72)] md:p-10">
+    <div class="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-[#C79C49]/10 blur-2xl"></div>
+    <div class="absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-[#175247]/10 blur-2xl"></div>
+
+    <div class="relative">
+      <p class="text-sm font-semibold uppercase tracking-[0.16em] text-[#6A4917]">Bright Horizon - Africa</p>
+      <h1 class="mt-3 max-w-4xl text-3xl font-extrabold leading-tight tracking-tight text-[#103B34] md:text-5xl">
         Technology. Security. African Opportunity.
       </h1>
-      <p class="animate-fade-up animate-delay-2 mt-6 text-lg text-[#1A1A1A]/85 md:text-xl">
+      <div class="mt-5 h-0.5 w-14 rounded-full bg-linear-to-r from-[#c79c49] to-[#dabc84]"></div>
+      <p class="mt-6 max-w-3xl text-base leading-relaxed text-[#1A1A1A]/80 md:text-lg">
         Built for Startups and SMEs: practical IT consulting, information security, and opportunity facilitation across Africa's fastest-growing markets.
       </p>
-      <div class="animate-fade-up animate-delay-2 mt-5 flex flex-wrap gap-2">
+
+      <div class="mt-6 flex flex-wrap gap-2.5">
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Johannesburg</span>
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Kinshasa</span>
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Kolwezi</span>
@@ -55,16 +68,17 @@ const heroSlideDurationSec = heroSlides.length * 7;
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Cape Town</span>
         <span class="accent-chip rounded-full px-3 py-1 text-xs font-semibold">Nairobi</span>
       </div>
-      <div class="animate-fade-up animate-delay-3 mt-10 flex flex-wrap gap-4">
+
+      <div class="mt-8 flex flex-wrap gap-4">
         <a
           href="https://dev.brighthorizon.co.za/contactus"
           target="_blank"
           rel="noreferrer"
-          class="hero-cta-primary btn-shine rounded-full px-6 py-3 text-sm font-semibold"
+          class="hero-cta-primary btn-shine rounded-full px-7 py-3.5 text-sm font-bold"
         >
           Get Started
         </a>
-        <a href={`${baseUrl}services`} class="hero-cta-secondary btn-shine rounded-full px-6 py-3 text-sm font-semibold">
+        <a href={`${baseUrl}services`} class="hero-cta-secondary btn-shine rounded-full px-7 py-3.5 text-sm font-bold">
           Our Services
         </a>
       </div>
@@ -139,7 +153,7 @@ const heroSlideDurationSec = heroSlides.length * 7;
       image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1400&q=80"
     />
   </div>
-  <div class="mt-10 rounded-3xl border border-[#E1C178]/35 bg-gradient-to-r from-[#0E3D35]/95 via-[#135042]/95 to-[#0D3831]/95 p-7 shadow-2xl shadow-[#05201C]/30">
+  <div class="mt-10 rounded-3xl border border-[#E1C178]/35 bg-linear-to-r from-[#0E3D35]/95 via-[#135042]/95 to-[#0D3831]/95 p-7 shadow-2xl shadow-[#05201C]/30">
     <div class="flex flex-wrap items-center justify-between gap-3">
       <h3 class="text-xl font-semibold tracking-tight text-[#FFF2D1]">Regional Opportunity Focus</h3>
       <span class="rounded-full border border-[#E1C178]/45 bg-[#E1C178]/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#FFE7B5]">
