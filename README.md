@@ -110,3 +110,4 @@ Set these in GitHub repository secrets for Cloudflare deployment workflows:
 
 - Primary site pages use `MainLayout.astro`.
 - Global visual system and homepage hero styling are maintained in `src/styles/global.css`.
+- Backup standards are documented in `BACKUP_POLICY.md`.
