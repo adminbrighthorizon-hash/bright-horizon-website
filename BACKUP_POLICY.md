@@ -4,7 +4,7 @@ This document defines backup standards for Bright Horizon Odoo environments.
 
 ## Backup Storage Paths
 
-- Local backups: `D:\Workspace\Horizon\Organizations\Bright Horizon\odoo\backups`
+- Local backups: `D:\Workspace\Horizon\Backups\odoo`
 - Server backups: `/opt/stack/odoo/backups`
 
 ## Required Naming Pattern
