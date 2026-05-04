@@ -6,12 +6,6 @@ import MainLayout from "../layouts/MainLayout.astro";
   title="Contact Bright Horizon | Get Started Today"
   description="Reach out to Bright Horizon for cloud hosting, Odoo ERP, automation, IT consulting, and managed business technology solutions in South Africa. Response within 1 business day."
 >
-<script>
-  // Auto-open the contact portal in a new tab when the user lands on this page
-  if (typeof window !== 'undefined') {
-    window.open('https://www.brighthorizon.co.za/contact/', '_blank', 'noopener,noreferrer');
-  }
-</script>
 <section class="soft-gradient border-b border-[#1F7A63]/10">
   <div class="mx-auto max-w-6xl px-6 py-20">
     <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
@@ -24,7 +18,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           Share your challenge or goal — whether it's reducing costs, modernising systems, automating operations, or launching on the cloud. We'll come back with clarity, not a sales pitch.
         </p>
         <div class="animate-fade-up animate-delay-3 mt-8 flex flex-wrap gap-3">
-          <a href="https://www.brighthorizon.co.za/contact/" target="_blank" rel="noreferrer" class="btn-primary btn-shine inline-flex rounded-full px-6 py-3 text-sm font-semibold">
+          <a href="/contact/" target="_blank" rel="noreferrer" class="btn-primary btn-shine inline-flex rounded-full px-6 py-3 text-sm font-semibold">
             Email Our Team
           </a>
           <a href="tel:+278770021060" class="inline-flex items-center gap-2 rounded-full border border-[#1F7A63]/35 bg-white/80 px-6 py-3 text-sm font-bold text-[#145A46] shadow-sm transition hover:bg-white hover:border-[#1F7A63]/55 active:scale-95">
@@ -75,7 +69,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           <div>
             <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[#6A4917]">Consultation</p>
             <a
-              href="https://www.brighthorizon.co.za/contact/"
+              href="/contact/"
               target="_blank"
               rel="noreferrer"
               class="mt-3 inline-flex items-center gap-2 rounded-full border border-[#C79C49]/40 px-5 py-2.5 font-semibold text-[#175247] transition hover:bg-[#F8EFD8]"
@@ -140,7 +134,7 @@ import MainLayout from "../layouts/MainLayout.astro";
         <!-- CTAs -->
         <div class="flex flex-wrap gap-3">
           <a
-            href="https://www.brighthorizon.co.za/contact/"
+            href="/contact/"
             target="_blank"
             rel="noreferrer"
             class="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold transition hover:opacity-90 active:scale-95"
@@ -150,7 +144,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             Start the Conversation
           </a>
           <a
-            href="https://www.brighthorizon.co.za/contact/"
+            href="/contact/"
             target="_blank"
             rel="noreferrer"
             class="inline-flex items-center gap-2 rounded-full border px-6 py-3.5 text-sm font-semibold transition hover:bg-[rgba(199,156,73,0.1)] active:scale-95"
